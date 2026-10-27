@@ -205,3 +205,21 @@
 2026-10-27 16:17:04,230 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: b7f824e9
 2026-10-27 16:18:32,069 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
 2026-10-27 16:18:32,312 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?id=eq.1 "HTTP/2 200 OK"
+2026-10-27 23:27:30,754 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\b1d13e09-22f6-4eef-9cc1-521b116ac510_CV_Yusuf Alfi.pdf
+2026-10-27 23:27:30,756 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\b1d13e09-22f6-4eef-9cc1-521b116ac510_CV_Yusuf Alfi.pdf
+2026-10-27 23:27:30,967 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 23:27:30,967 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 23:27:36,595 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 23:27:36,597 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 23:27:40,068 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: c224f020
+2026-10-27 23:28:51,540 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 23:28:51,757 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?id=eq.1 "HTTP/2 200 OK"
+2026-10-27 23:28:52,838 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"
+2026-10-27 23:37:52,981 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\08931631-cced-4188-abe3-438906e7d8f6_CV_Yusuf Alfi.pdf
+2026-10-27 23:37:53,006 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\08931631-cced-4188-abe3-438906e7d8f6_CV_Yusuf Alfi.pdf
+2026-10-27 23:37:53,209 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 23:37:53,209 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 23:37:54,988 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 23:37:54,989 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 23:37:56,457 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 62183f88
+2026-10-27 23:39:54,104 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"

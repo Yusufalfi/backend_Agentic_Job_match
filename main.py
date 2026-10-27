@@ -36,7 +36,7 @@ MAX_FILE_SIZE = 5 * 1024 * 1024  # 5,242,880 bytes
 
 @app.get("/")
 def read_root():
-    return {"status": "AI Job Match Backend is running smoothly 🚀"}
+    return {"status": "AI Job Match Backend is running .."}
 
 @app.post("/api/register-cv")
 async def register_cv(
@@ -99,14 +99,210 @@ async def register_cv(
 # ==========================================
 # TELEGRAM WEBHOOK ENDPOINT
 # ==========================================
+# @app.post("/api/telegram-webhook")
+# async def telegram_webhook(request: Request):
+#     """
+#     Endpoint ini otomatis ditembak oleh server Telegram 
+#     ketika user ngeklik link polos dan nge-chat bot (/start).
+#     """
+#     try:
+#         data = await request.json()
+        
+#         # Pastikan ada pesan teks masuk dari user
+#         if "message" in data and "text" in data["message"]:
+#             message = data["message"]
+#             chat_id = message["chat"]["id"]
+#             text = message.get("text", "")
+#             user_first_name = message["from"].get("first_name", "User")
+
+#             # Cek apakah perintahnya /start
+#             if text.startswith("/start"):
+                
+#                 # --- SESSION MATCHING LOGIC (GANTI BAGIAN INI) ---
+#                 # Cari data user di Supabase yang statusnya masih 'pending_telegram'
+#                 # Diambil berdasarkan yang paling baru dibuat (created_at paling akhir)
+#                 response = supabase.table("users") \
+#                     .select("*") \
+#                     .eq("status", "pending_telegram") \
+#                     .order("created_at", desc=True) \
+#                     .limit(1) \
+#                     .execute()
+                
+#                 pending_users = response.data
+                
+#                 if pending_users:
+#                     target_user = pending_users[0]
+                    
+#                     # Update telegram_chat_id dan ubah status jadi 'connected'
+#                     update_response = supabase.table("users").update({
+#                         "telegram_chat_id": str(chat_id),
+#                         "status": "connected"
+#                     }).eq("id", target_user["id"]).execute()
+
+#                     if update_response.data:
+#                         reply_text = (
+#                             f"🎉 Halo {user_first_name}! Akun Telegram lu berhasil **terhubung** dengan CV yang lu upload di web!\n\n"
+#                             f"🤖 Bot ini bakal otomatis ngabarin lu kalau ada lowongan kerja yang cocok sama target role lu. Ditunggu ya!"
+#                         )
+#                     else:
+#                         reply_text = (
+#                             "⚠️ Terjadi kesalahan saat menghubungkan akun di database. Coba ulangi prosesnya di web ya."
+#                         )
+#                 else:
+#                     # Kalau tidak ada sesi pending sama sekali di web
+#                     reply_text = (
+#                         f"Halo {user_first_name}! Selamat datang di **Agentic AI Job Match Bot** 🚀\n\n"
+#                         "Silakan upload CV lu terlebih dahulu lewat web platform kita untuk mulai mencari lowongan kerja otomatis!"
+#                     )
+
+#                     # opsi ke 2
+#                     # reply_text = (
+#                     #     f"Halo {user_first_name}! Akun Telegram lu berhasil terhubung dengan CV yang lu upload di web.\n\n"
+#                     #     f"Bot ini bakal otomatis ngabarin lu kalau ada lowongan kerja yang cocok sama target role lu. Ditunggu ya!"
+#                     # )
+
+#                 # Kirim balasan ke user lewat Telegram HTTP API
+#                 async with httpx.AsyncClient() as client:
+#                     res = await client.post(
+#                         f"{TELEGRAM_API_URL}/sendMessage",
+#                         json={
+#                             "chat_id": chat_id,
+#                             "text": reply_text,
+#                             # "parse_mode": "Markdown"
+#                         }
+#                     )
+#                     print(f"DEBUG TELEGRAM STATUS: {res.status_code}")
+#                     print(f"DEBUG TELEGRAM RESPONSE: {res.text}")
+        
+#         return {"status": "ok"}
+    
+#     except Exception as e:
+#         print(f"Error in telegram_webhook: {str(e)}")
+#         return {"status": "error", "message": str(e)}
+
+
+# ==========================================
+# TELEGRAM WEBHOOK ENDPOINT
+# ==========================================
+# @app.post("/api/telegram-webhook")
+# async def telegram_webhook(request: Request):
+#     """
+#     Endpoint ini otomatis ditembak oleh server Telegram 
+#     baik saat user mengirim pesan/perintah maupun saat mengklik Inline Button.
+#     """
+#     try:
+#         data = await request.json()
+        
+#         async with httpx.AsyncClient() as client:
+            
+#             # KASUS 1: User mengklik Inline Button (Verifikasi)
+#             if "callback_query" in data:
+#                 callback = data["callback_query"]
+#                 chat_id = callback["message"]["chat"]["id"]
+#                 callback_data = callback["data"]
+#                 message_id = callback["message"]["message_id"]
+#                 user_first_name = callback["from"].get("first_name", "User")
+
+#                 if callback_data == "verify_account":
+#                     # Cari data user di Supabase yang statusnya masih 'pending_telegram' (paling baru)
+#                     response = supabase.table("users") \
+#                         .select("*") \
+#                         .eq("status", "pending_telegram") \
+#                         .order("created_at", desc=True) \
+#                         .limit(1) \
+#                         .execute()
+                    
+#                     pending_users = response.data
+                    
+#                     if pending_users:
+#                         target_user = pending_users[0]
+                        
+#                         # Update telegram_chat_id dan ubah status jadi 'connected'
+#                         update_response = supabase.table("users").update({
+#                             "telegram_chat_id": str(chat_id),
+#                             "status": "connected"
+#                         }).eq("id", target_user["id"]).execute()
+
+#                         if update_response.data:
+#                             reply_text = (
+#                                 f"🎉 Halo {user_first_name}! Akun Telegram lu berhasil terhubung dengan CV yang lu upload di web!\n\n"
+#                                 f"🤖 Bot ini bakal otomatis ngabarin lu kalau ada lowongan kerja yang cocok sama target role lu. Ditunggu ya!"
+#                             )
+#                         else:
+#                             reply_text = "⚠️ Terjadi kesalahan saat menghubungkan akun di database. Coba ulangi prosesnya di web ya."
+#                     else:
+#                         reply_text = "⚠️ Tidak ada sesi CV pending yang ditemukan. Silakan upload CV lu lagi di web."
+
+#                     # Edit pesan sebelumnya supaya tombolnya hilang dan berubah jadi teks konfirmasi sukses
+#                     res_edit = await client.post(
+#                         f"{TELEGRAM_API_URL}/editMessageText",
+#                         json={
+#                             "chat_id": chat_id,
+#                             "message_id": message_id,
+#                             "text": reply_text
+#                         }
+#                     )
+#                     print(f"DEBUG EDIT MESSAGE STATUS: {res_edit.status_code}")
+
+#                     # Hilangkan animasi loading mutar-putar pada tombol di Telegram
+#                     res_answer = await client.post(
+#                         f"{TELEGRAM_API_URL}/answerCallbackQuery",
+#                         json={"callback_query_id": callback["id"], "text": "Verifikasi Sukses! 🎉"}
+#                     )
+#                     print(f"DEBUG ANSWER QUERY STATUS: {res_answer.status_code}")
+
+#             # KASUS 2: User baru masuk atau kirim pesan teks biasa (termasuk /start)
+#             elif "message" in data and "text" in data["message"]:
+#                 message = data["message"]
+#                 chat_id = message["chat"]["id"]
+#                 text = message.get("text", "")
+#                 user_first_name = message["from"].get("first_name", "User")
+
+#                 # Kirim sambutan dan Inline Button interaktif supaya user tidak perlu ketik manual
+#                 reply_text = (
+#                     f"Halo {user_first_name}! Selamat datang di **Agentic AI Job Match Bot** 🚀\n\n"
+#                     f"Klik tombol di bawah ini untuk menghubungkan akun Telegram lu dengan CV yang sudah di-upload di web:"
+#                 )
+                
+#                 inline_keyboard = {
+#                     "inline_keyboard": [
+#                         [
+#                             {"text": "🔗 Verifikasi Akun Saya", "callback_data": "verify_account"}
+#                         ]
+#                     ]
+#                 }
+
+#                 res = await client.post(
+#                     f"{TELEGRAM_API_URL}/sendMessage",
+#                     json={
+#                         "chat_id": chat_id,
+#                         "text": reply_text,
+#                         "reply_markup": inline_keyboard
+#                     }
+#                 )
+#                 print(f"DEBUG SEND MESSAGE STATUS: {res.status_code}")
+#                 print(f"DEBUG SEND MESSAGE RESPONSE: {res.text}")
+        
+#         return {"status": "ok"}
+    
+#     except Exception as e:
+#         print(f"Error in telegram_webhook: {str(e)}")
+#         return {"status": "error", "message": str(e)}
+
+
+
+# ==========================================
+# TELEGRAM WEBHOOK ENDPOINT (DEEP LINKING)
+# ==========================================
 @app.post("/api/telegram-webhook")
 async def telegram_webhook(request: Request):
     """
     Endpoint ini otomatis ditembak oleh server Telegram 
-    ketika user ngeklik link polos dan nge-chat bot (/start).
+    ketika user mengklik link deep linking atau menekan tombol /start.
     """
     try:
         data = await request.json()
+        print(f"DEBUG INCOMING DATA: {data}")
         
         # Pastikan ada pesan teks masuk dari user
         if "message" in data and "text" in data["message"]:
@@ -115,25 +311,37 @@ async def telegram_webhook(request: Request):
             text = message.get("text", "")
             user_first_name = message["from"].get("first_name", "User")
 
-            # Cek apakah perintahnya /start
+            # Cek apakah perintahnya diawali dengan /start
             if text.startswith("/start"):
+                # Pisahkan /start dengan payload unique_code di belakangnya (contoh: /start uuid-xyz)
+                parts = text.split(" ", 1)
+                unique_code = parts[1] if len(parts) > 1 else None
                 
-                # --- SESSION MATCHING LOGIC (GANTI BAGIAN INI) ---
-                # Cari data user di Supabase yang statusnya masih 'pending_telegram'
-                # Diambil berdasarkan yang paling baru dibuat (created_at paling akhir)
-                response = supabase.table("users") \
-                    .select("*") \
-                    .eq("status", "pending_telegram") \
-                    .order("created_at", desc=True) \
-                    .limit(1) \
-                    .execute()
-                
-                pending_users = response.data
-                
-                if pending_users:
-                    target_user = pending_users[0]
-                    
-                    # Update telegram_chat_id dan ubah status jadi 'connected'
+                target_user = None
+
+                if unique_code:
+                    # 1. Jika ada payload unique_code dari web, cari user berdasarkan kode tersebut
+                    print(f"DEBUG: Menerima unique_code dari web -> {unique_code}")
+                    response = supabase.table("users") \
+                        .select("*") \
+                        .eq("unique_code", unique_code) \
+                        .execute()
+                    if response.data:
+                        target_user = response.data[0]
+                else:
+                    # 2. Fallback jika dibuka polos tanpa parameter, ambil sesi pending terbaru
+                    print("DEBUG: Dibuka polos tanpa unique_code, mencari sesi pending terbaru...")
+                    response = supabase.table("users") \
+                        .select("*") \
+                        .eq("status", "pending_telegram") \
+                        .order("created_at", desc=True) \
+                        .limit(1) \
+                        .execute()
+                    if response.data:
+                        target_user = response.data[0]
+
+                # Lakukan update ke Supabase jika user ditemukan
+                if target_user:
                     update_response = supabase.table("users").update({
                         "telegram_chat_id": str(chat_id),
                         "status": "connected"
@@ -145,21 +353,12 @@ async def telegram_webhook(request: Request):
                             f"🤖 Bot ini bakal otomatis ngabarin lu kalau ada lowongan kerja yang cocok sama target role lu. Ditunggu ya!"
                         )
                     else:
-                        reply_text = (
-                            "⚠️ Terjadi kesalahan saat menghubungkan akun di database. Coba ulangi prosesnya di web ya."
-                        )
+                        reply_text = "⚠️ Terjadi kesalahan saat menghubungkan akun di database. Coba ulangi prosesnya di web ya."
                 else:
-                    # Kalau tidak ada sesi pending sama sekali di web
                     reply_text = (
                         f"Halo {user_first_name}! Selamat datang di **Agentic AI Job Match Bot** 🚀\n\n"
-                        "Silakan upload CV lu terlebih dahulu lewat web platform kita untuk mulai mencari lowongan kerja otomatis!"
+                        "Tidak ada sesi CV pending yang ditemukan. Silakan upload CV lu terlebih dahulu lewat web platform kita!"
                     )
-
-                    # opsi ke 2
-                    # reply_text = (
-                    #     f"Halo {user_first_name}! Akun Telegram lu berhasil terhubung dengan CV yang lu upload di web.\n\n"
-                    #     f"Bot ini bakal otomatis ngabarin lu kalau ada lowongan kerja yang cocok sama target role lu. Ditunggu ya!"
-                    # )
 
                 # Kirim balasan ke user lewat Telegram HTTP API
                 async with httpx.AsyncClient() as client:
@@ -167,8 +366,7 @@ async def telegram_webhook(request: Request):
                         f"{TELEGRAM_API_URL}/sendMessage",
                         json={
                             "chat_id": chat_id,
-                            "text": reply_text,
-                            # "parse_mode": "Markdown"
+                            "text": reply_text
                         }
                     )
                     print(f"DEBUG TELEGRAM STATUS: {res.status_code}")
@@ -179,3 +377,5 @@ async def telegram_webhook(request: Request):
     except Exception as e:
         print(f"Error in telegram_webhook: {str(e)}")
         return {"status": "error", "message": str(e)}
+
+

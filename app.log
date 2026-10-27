@@ -1,0 +1,207 @@
+2026-10-26 14:05:05,260 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:05:05,260 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:05:05,517 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:05:05,521 [INFO] CVParser: Mengirim teks CV ke Groq AI untuk diekstrak...
+2026-10-26 14:05:05,885 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 0.498518 seconds
+2026-10-26 14:05:06,436 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 0.912358 seconds
+2026-10-26 14:05:07,388 [ERROR] CVParser: Gagal saat parsing AI Groq: Connection error.
+2026-10-26 14:09:11,590 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:09:11,590 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:09:11,652 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:09:11,654 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:09:12,847 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 14:09:12,856 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase...
+2026-10-26 14:09:13,222 [ERROR] CVParser: Gagal menyimpan ke database Supabase: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-26 14:13:25,636 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:13:25,652 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:13:25,722 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:13:25,724 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:13:26,991 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 14:13:26,991 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase...
+2026-10-26 14:13:27,129 [ERROR] CVParser: Gagal menyimpan ke database Supabase: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-26 14:37:11,610 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:37:11,610 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:37:11,667 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:37:11,667 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:37:13,178 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 14:37:13,178 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase...
+2026-10-26 14:37:13,375 [ERROR] CVParser: Gagal menyimpan ke database Supabase: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-26 14:41:29,169 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:41:29,223 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:41:29,433 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:41:29,433 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:41:29,981 [ERROR] CVParser: Groq API Error [405]: 
+2026-10-26 14:42:37,572 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:42:37,572 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:42:37,703 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:42:37,704 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:42:38,183 [ERROR] CVParser: Groq API Error [405]: 
+2026-10-26 14:43:19,993 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:43:19,994 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:43:20,132 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:43:20,134 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:43:20,586 [ERROR] CVParser: Groq API Error [405]: 
+2026-10-26 14:43:56,800 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:43:56,800 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:43:56,948 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:43:56,948 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API (Bypass SSL Active)...
+2026-10-26 14:43:57,464 [ERROR] CVParser: Groq API Error [405]: 
+2026-10-26 14:46:04,150 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:46:04,150 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:46:04,202 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:46:04,202 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 14:46:05,824 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 14:46:05,825 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 14:46:06,952 [ERROR] CVParser: Supabase REST API Error [404]: {"code":"PGRST125","details":null,"hint":null,"message":"Invalid path specified in request URL"}
+2026-10-26 14:49:33,474 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:49:33,475 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:49:33,526 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:49:33,526 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 14:49:34,928 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 14:49:34,929 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 14:49:35,631 [ERROR] CVParser: Supabase REST API Error [401]: {"code":"42501","details":null,"hint":null,"message":"new row violates row-level security policy for table \"users\""}
+2026-10-26 14:53:57,003 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 14:53:57,004 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 14:53:57,115 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 14:53:57,117 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 14:53:58,330 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 14:53:58,330 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 14:53:59,165 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: aec8112b
+2026-10-26 15:02:26,512 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 15:02:26,512 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 15:02:26,568 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 15:02:26,568 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 15:02:28,012 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 15:02:28,013 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 15:02:29,212 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: a9bed335
+2026-10-26 15:04:43,606 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 15:04:43,606 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 15:04:43,666 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 15:04:43,667 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 15:04:45,088 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 15:04:45,090 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 15:04:45,644 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 26c02bbb
+2026-10-26 15:05:58,588 [INFO] CVParser: Memproses registrasi user baru dari file: Yusuf Alfi.pdf
+2026-10-26 15:05:58,588 [INFO] CVParser: Mulai membaca file PDF: Yusuf Alfi.pdf
+2026-10-26 15:05:58,650 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 15:05:58,650 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 15:06:00,029 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 15:06:00,031 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 15:06:00,487 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: eda434f3
+2026-10-26 15:47:23,227 [INFO] CVParser: Memproses registrasi user baru dari file: C:\Users\yalfi\AppData\Local\Temp\tmpi_armrkp.pdf
+2026-10-26 15:47:23,230 [INFO] CVParser: Mulai membaca file PDF: C:\Users\yalfi\AppData\Local\Temp\tmpi_armrkp.pdf
+2026-10-26 15:47:23,526 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 15:47:23,527 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 15:47:25,280 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 15:47:25,281 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 15:47:26,735 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 1c82d303
+2026-10-26 15:57:38,069 [INFO] CVParser: Memproses registrasi user baru dari file: C:\Users\yalfi\AppData\Local\Temp\tmpjhgyov63.pdf
+2026-10-26 15:57:38,069 [INFO] CVParser: Mulai membaca file PDF: C:\Users\yalfi\AppData\Local\Temp\tmpjhgyov63.pdf
+2026-10-26 15:57:38,325 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 15:57:38,326 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 15:57:39,794 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 15:57:39,796 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 15:57:41,046 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 2fd1e978
+2026-10-26 16:12:30,416 [INFO] CVParser: Memproses registrasi user baru dari file: C:\Users\yalfi\AppData\Local\Temp\tmpgida0f7r.pdf
+2026-10-26 16:12:30,417 [INFO] CVParser: Mulai membaca file PDF: C:\Users\yalfi\AppData\Local\Temp\tmpgida0f7r.pdf
+2026-10-26 16:12:30,778 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-26 16:12:30,778 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-26 16:12:32,372 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-26 16:12:32,377 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-26 16:12:33,994 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 7111fc04
+2026-10-27 08:42:39,540 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\63103ddb-0749-4f02-8782-416517f4b3e5_Yusuf Alfi.pdf
+2026-10-27 08:42:39,544 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\63103ddb-0749-4f02-8782-416517f4b3e5_Yusuf Alfi.pdf
+2026-10-27 08:42:39,837 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 08:42:39,837 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 08:42:41,210 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 08:42:41,214 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 08:42:42,934 [ERROR] CVParser: Supabase REST API Error [400]: {"code":"22P02","details":"Array value must start with \"{\" or dimension information.","hint":null,"message":"malformed array literal: \"RPA Developer\""}
+2026-10-27 08:44:49,483 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\ab297997-6a5b-46df-93a1-812d55de779c_Yusuf Alfi.pdf
+2026-10-27 08:44:49,485 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\ab297997-6a5b-46df-93a1-812d55de779c_Yusuf Alfi.pdf
+2026-10-27 08:44:49,748 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 08:44:49,748 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 08:44:51,531 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 08:44:51,534 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 08:44:53,442 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 9707f700
+2026-10-27 09:56:49,916 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\0d9f0467-98ba-4c58-8b37-ba4428c51039_Yusuf Alfi.pdf
+2026-10-27 09:56:49,916 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\0d9f0467-98ba-4c58-8b37-ba4428c51039_Yusuf Alfi.pdf
+2026-10-27 09:56:50,180 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 09:56:50,188 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 09:56:53,176 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 09:56:53,179 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 09:56:54,657 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: da976890
+2026-10-27 11:31:34,432 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?unique_code=eq.9707f700 "HTTP/2 200 OK"
+2026-10-27 11:32:25,791 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?unique_code=eq.9707f700 "HTTP/2 200 OK"
+2026-10-27 11:33:45,231 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?unique_code=eq.9707f700 "HTTP/2 200 OK"
+2026-10-27 11:33:50,182 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 400 Bad Request"
+2026-10-27 11:35:57,761 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?unique_code=eq.9707f700 "HTTP/2 200 OK"
+2026-10-27 11:36:02,338 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"
+2026-10-27 13:54:03,209 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\6a18fca7-ab51-420e-9c39-0ccf086eef96_Yusuf Alfi.pdf
+2026-10-27 13:54:03,210 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\6a18fca7-ab51-420e-9c39-0ccf086eef96_Yusuf Alfi.pdf
+2026-10-27 13:54:03,692 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 13:54:03,694 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 13:54:06,350 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 13:54:06,351 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 13:54:07,978 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 9e168b7c
+2026-10-27 14:17:29,655 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\f55cb521-6167-45ed-8229-d17543127d37_Yusuf Alfi.pdf
+2026-10-27 14:17:29,670 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\f55cb521-6167-45ed-8229-d17543127d37_Yusuf Alfi.pdf
+2026-10-27 14:17:30,207 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 14:17:30,207 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 14:17:31,950 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 14:17:31,950 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 14:17:33,076 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 75c50ef7
+2026-10-27 14:50:23,375 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\b3db48a5-3cfc-47ec-bdef-743218e69a77_Yusuf Alfi.pdf
+2026-10-27 14:50:23,375 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\b3db48a5-3cfc-47ec-bdef-743218e69a77_Yusuf Alfi.pdf
+2026-10-27 14:50:23,593 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 14:50:23,593 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 14:50:25,641 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 14:50:25,652 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 14:50:27,108 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: e1bb5244
+2026-10-27 15:13:50,636 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\ff7eab21-a660-4f54-94fb-2e18c96baeb8_Yusuf Alfi.pdf
+2026-10-27 15:13:50,640 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\ff7eab21-a660-4f54-94fb-2e18c96baeb8_Yusuf Alfi.pdf
+2026-10-27 15:13:50,927 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 15:13:50,927 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 15:13:52,456 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 15:13:52,456 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 15:13:54,023 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 3b180f5e
+2026-10-27 15:42:08,588 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 15:42:08,944 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?id=eq.1 "HTTP/2 200 OK"
+2026-10-27 15:42:11,147 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"
+2026-10-27 15:42:11,708 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 15:42:14,633 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"
+2026-10-27 15:42:14,985 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 15:42:19,116 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"
+2026-10-27 15:42:19,657 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 15:42:21,891 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8661354414:AAF0DMy-vgK0musLar9KMOfxkhocngUPDQs/sendMessage "HTTP/1.1 200 OK"
+2026-10-27 15:55:17,525 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\900623c1-75b0-4d42-a873-84aeb04fecc3_Yusuf Alfi.pdf
+2026-10-27 15:55:17,525 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\900623c1-75b0-4d42-a873-84aeb04fecc3_Yusuf Alfi.pdf
+2026-10-27 15:55:18,358 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 15:55:18,360 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 15:55:20,101 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 15:55:20,103 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 15:55:21,650 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 02c1eda5
+2026-10-27 15:59:27,441 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\9edd2046-9d23-4bac-8f5f-f35f6f6668cf_Yusuf Alfi.pdf
+2026-10-27 15:59:27,442 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\9edd2046-9d23-4bac-8f5f-f35f6f6668cf_Yusuf Alfi.pdf
+2026-10-27 15:59:27,773 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 15:59:27,773 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 15:59:29,369 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 15:59:29,369 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 15:59:30,519 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 3d31d2e2
+2026-10-27 16:06:53,842 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\9f100b97-2ea9-4023-86cf-ef187bf27460_Yusuf Alfi.pdf
+2026-10-27 16:06:53,843 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\9f100b97-2ea9-4023-86cf-ef187bf27460_Yusuf Alfi.pdf
+2026-10-27 16:06:54,173 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 16:06:54,175 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 16:06:56,442 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 16:06:56,445 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 16:06:58,391 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: 52cba5d0
+2026-10-27 16:09:28,192 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 16:09:28,783 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?id=eq.2 "HTTP/2 200 OK"
+2026-10-27 16:17:00,864 [INFO] CVParser: Memproses registrasi user baru dari file: temp_uploads\3e5fb859-a090-4457-a597-6c38abc99291_Yusuf Alfi.pdf
+2026-10-27 16:17:00,865 [INFO] CVParser: Mulai membaca file PDF: temp_uploads\3e5fb859-a090-4457-a597-6c38abc99291_Yusuf Alfi.pdf
+2026-10-27 16:17:01,331 [INFO] CVParser: Berhasil membaca 1 halaman dari PDF.
+2026-10-27 16:17:01,331 [INFO] CVParser: Mengirim teks CV ke Groq AI via REST API...
+2026-10-27 16:17:02,970 [INFO] CVParser: Berhasil mengekstrak data CV menggunakan Groq API.
+2026-10-27 16:17:02,970 [INFO] CVParser: Menyimpan data user Yusuf Alfi ke Supabase via REST API...
+2026-10-27 16:17:04,230 [INFO] CVParser: Sukses! User terdaftar dengan Unique Code: b7f824e9
+2026-10-27 16:18:32,069 [INFO] httpx: HTTP Request: GET https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?select=%2A&status=eq.pending_telegram&order=created_at.desc&limit=1 "HTTP/2 200 OK"
+2026-10-27 16:18:32,312 [INFO] httpx: HTTP Request: PATCH https://umjmuvtruuphnubiqgzx.supabase.co/rest/v1/users?id=eq.1 "HTTP/2 200 OK"

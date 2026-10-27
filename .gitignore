@@ -1,0 +1,23 @@
+# Virtual Environment (Wajib diabaikan karena ukurannya besar)
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache (Folder sampah hasil compile Python, otomatis dibuat sistem)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environment Files (SANGAT PENTING: Menyembunyikan API Key, database URL, dll)
+.env
+.env.local
+.env.*
+
+# Editor & OS Cache
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

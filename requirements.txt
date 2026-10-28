@@ -7,3 +7,7 @@ supabase
 python-dotenv
 requests
 groq
+playwright
+beautifulsoup4
+truststore
+

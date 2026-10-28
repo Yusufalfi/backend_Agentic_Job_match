@@ -1143,3 +1143,726 @@ Call log:
 2026-10-28 15:41:41,529 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
 2026-10-28 15:41:51,835 [INFO] Berhasil menyinkronkan pencatatan 40 dari 40 lowongan ke Supabase.
 2026-10-28 15:41:51,835 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 22:20:06,350 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 22:20:06,350 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 22:20:06,909 [INFO] Berhasil memuat profil user dari DB -> User ID: 2, Roles: ['python developer', 'ai automation']
+2026-10-28 22:20:06,910 [INFO] User ID aktif: 2
+2026-10-28 22:20:06,910 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-28 22:20:06,911 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 22:20:06,912 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 22:20:06,912 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 22:20:07,057 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 22:20:08,526 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 22:20:08,577 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 22:20:08,577 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 22:20:08,843 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 22:20:08,884 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 22:20:08,884 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 22:20:10,675 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 22:20:10,675 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 22:20:15,013 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 22:20:16,396 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 22:20:17,280 [INFO] [DETAIL] Membuka tab (1/10): Backend Developer (Golang)...
+2026-10-28 22:20:17,281 [INFO] [DETAIL] Membuka tab (2/10): IT Application Developer...
+2026-10-28 22:20:17,283 [INFO] [DETAIL] Membuka tab (3/10): GIS Application Developer...
+2026-10-28 22:20:17,284 [INFO] [DETAIL] Membuka tab (4/10): Backend Developer...
+2026-10-28 22:20:17,285 [INFO] [DETAIL] Membuka tab (5/10): Backend Developer...
+2026-10-28 22:20:20,293 [INFO] [PROGRES] Selesai 1/10 | Backend Developer
+2026-10-28 22:20:20,294 [INFO] [DETAIL] Membuka tab (6/10): IT DEVELOPER...
+2026-10-28 22:20:20,311 [INFO] [PROGRES] Selesai 2/10 | IT Application Developer
+2026-10-28 22:20:20,312 [INFO] [DETAIL] Membuka tab (7/10): Back End Developer...
+2026-10-28 22:20:20,944 [INFO] [PROGRES] Selesai 3/10 | GIS Application Developer
+2026-10-28 22:20:20,944 [INFO] [DETAIL] Membuka tab (8/10): Developer Staff...
+2026-10-28 22:20:21,026 [INFO] [PROGRES] Selesai 4/10 | Backend Developer (Golang
+2026-10-28 22:20:21,027 [INFO] [DETAIL] Membuka tab (9/10): Programmer...
+2026-10-28 22:20:21,323 [INFO] [PROGRES] Selesai 5/10 | Backend Developer
+2026-10-28 22:20:21,323 [INFO] [DETAIL] Membuka tab (10/10): Staf Software Development...
+2026-10-28 22:20:22,820 [INFO] [PROGRES] Selesai 6/10 | IT DEVELOPER
+2026-10-28 22:20:23,614 [INFO] [PROGRES] Selesai 7/10 | Back End Developer
+2026-10-28 22:20:23,667 [INFO] [PROGRES] Selesai 8/10 | Developer Staff
+2026-10-28 22:20:24,069 [INFO] [PROGRES] Selesai 9/10 | Staf Software Development
+2026-10-28 22:20:24,089 [INFO] [PROGRES] Selesai 10/10 | Programmer
+2026-10-28 22:20:24,089 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 22:20:24,089 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 22:20:24,089 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 22:20:26,923 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 22:20:28,268 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 22:20:28,575 [INFO] [DETAIL] Membuka tab (1/10): AI Automation & AI Agent Devel...
+2026-10-28 22:20:28,575 [INFO] [DETAIL] Membuka tab (2/10): AI Engineer...
+2026-10-28 22:20:28,576 [INFO] [DETAIL] Membuka tab (3/10): AI Transformation Senior Manag...
+2026-10-28 22:20:28,576 [INFO] [DETAIL] Membuka tab (4/10): IT Manager...
+2026-10-28 22:20:28,577 [INFO] [DETAIL] Membuka tab (5/10): AI Automation & Industrial IoT...
+2026-10-28 22:20:31,441 [INFO] [PROGRES] Selesai 1/10 | IT Manager
+2026-10-28 22:20:31,441 [INFO] [DETAIL] Membuka tab (6/10): Digital Development & Producti...
+2026-10-28 22:20:31,528 [INFO] [PROGRES] Selesai 2/10 | AI Automation & Industria
+2026-10-28 22:20:31,529 [INFO] [DETAIL] Membuka tab (7/10): Specialist, AI Automation...
+2026-10-28 22:20:31,896 [INFO] [PROGRES] Selesai 3/10 | AI Engineer
+2026-10-28 22:20:31,897 [INFO] [DETAIL] Membuka tab (8/10): AI Automation Engineer (CRM & ...
+2026-10-28 22:20:31,904 [INFO] [PROGRES] Selesai 4/10 | AI Transformation Senior 
+2026-10-28 22:20:31,905 [INFO] [DETAIL] Membuka tab (9/10): AI Engineer...
+2026-10-28 22:20:32,017 [INFO] [PROGRES] Selesai 5/10 | AI Automation & AI Agent 
+2026-10-28 22:20:32,017 [INFO] [DETAIL] Membuka tab (10/10): Senior AI & Automation Enginee...
+2026-10-28 22:20:34,022 [INFO] [PROGRES] Selesai 6/10 | Specialist, AI Automation
+2026-10-28 22:20:34,368 [INFO] [PROGRES] Selesai 7/10 | Digital Development & Pro
+2026-10-28 22:20:34,414 [INFO] [PROGRES] Selesai 8/10 | AI Engineer
+2026-10-28 22:20:34,558 [INFO] [PROGRES] Selesai 9/10 | Senior AI & Automation En
+2026-10-28 22:20:34,634 [INFO] [PROGRES] Selesai 10/10 | AI Automation Engineer (C
+2026-10-28 22:20:34,634 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 22:20:35,229 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 22:20:35,258 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 22:20:35,259 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 22:20:50,280 [INFO] Berhasil menyinkronkan pencatatan 40 dari 40 lowongan ke Supabase.
+2026-10-28 22:20:50,280 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 23:19:34,125 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 23:19:34,125 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 23:19:34,622 [INFO] Berhasil memuat profil user dari DB -> User ID: 2, Roles: ['python developer', 'ai automation']
+2026-10-28 23:19:34,623 [INFO] User ID aktif: 2
+2026-10-28 23:19:34,623 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-28 23:19:34,624 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 23:19:34,624 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 23:19:34,624 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 23:19:34,725 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 23:19:35,908 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 23:19:35,968 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 23:19:35,969 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 23:19:36,380 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 23:19:36,434 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 23:19:36,434 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 23:19:38,664 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 23:19:38,691 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 23:19:42,557 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 23:19:43,669 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 23:19:44,390 [INFO] [DETAIL] Membuka tab (1/10): Backend Developer (Golang)...
+2026-10-28 23:19:44,391 [INFO] [DETAIL] Membuka tab (2/10): Backend Developer...
+2026-10-28 23:19:44,392 [INFO] [DETAIL] Membuka tab (3/10): GIS Application Developer...
+2026-10-28 23:19:44,393 [INFO] [DETAIL] Membuka tab (4/10): Backend Developer...
+2026-10-28 23:19:44,393 [INFO] [DETAIL] Membuka tab (5/10): Back End Developer...
+2026-10-28 23:19:47,096 [INFO] [PROGRES] Selesai 1/10 | Backend Developer
+2026-10-28 23:19:47,096 [INFO] [DETAIL] Membuka tab (6/10): IT Application Developer...
+2026-10-28 23:19:47,367 [INFO] [PROGRES] Selesai 2/10 | Back End Developer
+2026-10-28 23:19:47,368 [INFO] [DETAIL] Membuka tab (7/10): Backend Developer...
+2026-10-28 23:19:47,453 [INFO] [PROGRES] Selesai 3/10 | GIS Application Developer
+2026-10-28 23:19:47,453 [INFO] [DETAIL] Membuka tab (8/10): Developer Staff...
+2026-10-28 23:19:47,875 [INFO] [PROGRES] Selesai 4/10 | Backend Developer
+2026-10-28 23:19:47,876 [INFO] [DETAIL] Membuka tab (9/10): Backend (Golang) Developer...
+2026-10-28 23:19:48,123 [INFO] [PROGRES] Selesai 5/10 | Backend Developer (Golang
+2026-10-28 23:19:48,124 [INFO] [DETAIL] Membuka tab (10/10): IT DEVELOPER...
+2026-10-28 23:19:49,467 [INFO] [PROGRES] Selesai 6/10 | IT Application Developer
+2026-10-28 23:19:49,788 [INFO] [PROGRES] Selesai 7/10 | Developer Staff
+2026-10-28 23:19:50,196 [INFO] [PROGRES] Selesai 8/10 | Backend Developer
+2026-10-28 23:19:50,248 [INFO] [PROGRES] Selesai 9/10 | IT DEVELOPER
+2026-10-28 23:19:50,363 [INFO] [PROGRES] Selesai 10/10 | Backend (Golang) Develope
+2026-10-28 23:19:50,363 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 23:19:50,364 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 23:19:50,364 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 23:19:53,077 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 23:19:54,104 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 23:19:54,383 [INFO] [DETAIL] Membuka tab (1/10): Senior AI & Automation Enginee...
+2026-10-28 23:19:54,383 [INFO] [DETAIL] Membuka tab (2/10): AI Automation & AI Agent Devel...
+2026-10-28 23:19:54,384 [INFO] [DETAIL] Membuka tab (3/10): AI and Automation Specialist...
+2026-10-28 23:19:54,385 [INFO] [DETAIL] Membuka tab (4/10): AI Automation & Industrial IoT...
+2026-10-28 23:19:54,385 [INFO] [DETAIL] Membuka tab (5/10): AI Engineer...
+2026-10-28 23:19:56,746 [INFO] [PROGRES] Selesai 1/10 | Senior AI & Automation En
+2026-10-28 23:19:56,747 [INFO] [DETAIL] Membuka tab (6/10): AI engineer...
+2026-10-28 23:19:56,886 [INFO] [PROGRES] Selesai 2/10 | AI Engineer
+2026-10-28 23:19:56,886 [INFO] [DETAIL] Membuka tab (7/10): Specialist, AI Automation...
+2026-10-28 23:19:57,235 [INFO] [PROGRES] Selesai 3/10 | AI and Automation Special
+2026-10-28 23:19:57,236 [INFO] [DETAIL] Membuka tab (8/10): AI Transformation Senior Manag...
+2026-10-28 23:19:57,470 [INFO] [PROGRES] Selesai 4/10 | AI Automation & AI Agent 
+2026-10-28 23:19:57,471 [INFO] [DETAIL] Membuka tab (9/10): SENIOR AI & FULLSTACK SOLUTION...
+2026-10-28 23:19:57,762 [INFO] [PROGRES] Selesai 5/10 | AI Automation & Industria
+2026-10-28 23:19:57,763 [INFO] [DETAIL] Membuka tab (10/10): AI Automation Engineer (CRM & ...
+2026-10-28 23:19:59,048 [INFO] [PROGRES] Selesai 6/10 | AI engineer
+2026-10-28 23:19:59,692 [INFO] [PROGRES] Selesai 7/10 | SENIOR AI & FULLSTACK SOL
+2026-10-28 23:19:59,867 [INFO] [PROGRES] Selesai 8/10 | Specialist, AI Automation
+2026-10-28 23:19:59,945 [INFO] [PROGRES] Selesai 9/10 | AI Transformation Senior 
+2026-10-28 23:20:00,113 [INFO] [PROGRES] Selesai 10/10 | AI Automation Engineer (C
+2026-10-28 23:20:00,113 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 23:20:00,565 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 23:20:00,601 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 23:20:00,602 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 23:20:15,651 [INFO] Berhasil menyinkronkan pencatatan 40 dari 40 lowongan ke Supabase.
+2026-10-28 23:20:15,651 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-29 00:38:57,550 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-29 00:38:57,551 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-29 00:38:58,049 [INFO] Berhasil memuat profil user dari DB -> User ID: 3, Nama: Yusuf Alfi
+2026-10-29 00:38:58,050 [INFO] User ID aktif: 3
+2026-10-29 00:38:58,050 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-29 00:38:58,051 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-29 00:38:58,051 [INFO] Maksimal Limit Data per Role: 10
+2026-10-29 00:38:58,051 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-29 00:38:58,158 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-29 00:38:58,920 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-29 00:38:58,953 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-29 00:38:58,954 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-29 00:38:59,227 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-29 00:38:59,342 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-29 00:38:59,342 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-29 00:39:00,006 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-29 00:39:00,008 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-29 00:39:03,103 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-29 00:39:04,581 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-29 00:39:05,155 [INFO] [DETAIL] Membuka tab (1/10): Backend Developer (Golang)...
+2026-10-29 00:39:05,156 [INFO] [DETAIL] Membuka tab (2/10): Backend Developer...
+2026-10-29 00:39:05,157 [INFO] [DETAIL] Membuka tab (3/10): IT Developer, (ERP Odoo Implem...
+2026-10-29 00:39:05,158 [INFO] [DETAIL] Membuka tab (4/10): Odoo Technical Developer...
+2026-10-29 00:39:05,158 [INFO] [DETAIL] Membuka tab (5/10): Senior Backend Engineer...
+2026-10-29 00:39:07,805 [INFO] [PROGRES] Selesai 1/10 | Backend Developer
+2026-10-29 00:39:07,805 [INFO] [DETAIL] Membuka tab (6/10): Backend (Golang) Developer...
+2026-10-29 00:39:08,200 [INFO] [PROGRES] Selesai 2/10 | Odoo Technical Developer
+2026-10-29 00:39:08,201 [INFO] [DETAIL] Membuka tab (7/10): IT Programmer...
+2026-10-29 00:39:08,473 [INFO] [PROGRES] Selesai 3/10 | Backend Developer (Golang
+2026-10-29 00:39:08,473 [INFO] [DETAIL] Membuka tab (8/10): GIS Application Developer...
+2026-10-29 00:39:08,931 [INFO] [PROGRES] Selesai 4/10 | Senior Backend Engineer
+2026-10-29 00:39:08,932 [INFO] [DETAIL] Membuka tab (9/10): Back End Developer...
+2026-10-29 00:39:09,001 [INFO] [PROGRES] Selesai 5/10 | IT Developer, (ERP Odoo I
+2026-10-29 00:39:09,001 [INFO] [DETAIL] Membuka tab (10/10): AI engineer...
+2026-10-29 00:39:10,366 [INFO] [PROGRES] Selesai 6/10 | Backend (Golang) Develope
+2026-10-29 00:39:10,881 [INFO] [PROGRES] Selesai 7/10 | GIS Application Developer
+2026-10-29 00:39:11,282 [INFO] [PROGRES] Selesai 8/10 | AI engineer
+2026-10-29 00:39:11,420 [INFO] [PROGRES] Selesai 9/10 | Back End Developer
+2026-10-29 00:39:11,445 [INFO] [PROGRES] Selesai 10/10 | IT Programmer
+2026-10-29 00:39:11,445 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-29 00:39:11,445 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-29 00:39:11,445 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-29 00:39:13,961 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-29 00:39:14,979 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-29 00:39:15,373 [INFO] [DETAIL] Membuka tab (1/10): AI Automation & AI Agent Devel...
+2026-10-29 00:39:15,374 [INFO] [DETAIL] Membuka tab (2/10): AI Engineer...
+2026-10-29 00:39:15,375 [INFO] [DETAIL] Membuka tab (3/10): Senior AI & Automation Enginee...
+2026-10-29 00:39:15,375 [INFO] [DETAIL] Membuka tab (4/10): AI and Automation Specialist...
+2026-10-29 00:39:15,376 [INFO] [DETAIL] Membuka tab (5/10): IT & AI Automation Specialist...
+2026-10-29 00:39:17,709 [INFO] [PROGRES] Selesai 1/10 | IT & AI Automation Specia
+2026-10-29 00:39:17,709 [INFO] [DETAIL] Membuka tab (6/10): AI Automation Engineer (CRM & ...
+2026-10-29 00:39:18,091 [INFO] [PROGRES] Selesai 2/10 | AI and Automation Special
+2026-10-29 00:39:18,092 [INFO] [DETAIL] Membuka tab (7/10): AI Transformation Senior Manag...
+2026-10-29 00:39:18,544 [INFO] [PROGRES] Selesai 3/10 | AI Engineer
+2026-10-29 00:39:18,544 [INFO] [DETAIL] Membuka tab (8/10): AI Automation & Solutions Engi...
+2026-10-29 00:39:18,598 [INFO] [PROGRES] Selesai 4/10 | AI Automation & AI Agent 
+2026-10-29 00:39:18,599 [INFO] [DETAIL] Membuka tab (9/10): AI & Automation Engineer (AI A...
+2026-10-29 00:39:18,756 [INFO] [PROGRES] Selesai 5/10 | Senior AI & Automation En
+2026-10-29 00:39:18,757 [INFO] [DETAIL] Membuka tab (10/10): AI Automation & Industrial IoT...
+2026-10-29 00:39:19,988 [INFO] [PROGRES] Selesai 6/10 | AI Automation Engineer (C
+2026-10-29 00:39:21,001 [INFO] [PROGRES] Selesai 7/10 | AI Transformation Senior 
+2026-10-29 00:39:21,012 [INFO] [PROGRES] Selesai 8/10 | AI & Automation Engineer 
+2026-10-29 00:39:21,157 [INFO] [PROGRES] Selesai 9/10 | AI Automation & Solutions
+2026-10-29 00:39:21,206 [INFO] [PROGRES] Selesai 10/10 | AI Automation & Industria
+2026-10-29 00:39:21,206 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-29 00:39:21,794 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-29 00:39:21,833 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-29 00:39:21,834 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-29 00:39:35,736 [INFO] Berhasil menyinkronkan 40 dari 40 lowongan ke Supabase.
+2026-10-29 00:39:35,737 [INFO] Penyimpanan lowongan ke Supabase selesai.
+2026-10-29 00:39:35,737 [INFO] === MEMULAI PROSES EVALUASI AI (GROQ) ===
+2026-10-29 00:39:37,510 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:39:37,523 [INFO] Evaluasi berhasil [Yusuf Alfi]: Backend Developer (Golang) | Skor: 35
+2026-10-29 00:39:37,524 [INFO]   ❌ REJECTED (35) | Backend Developer (Golang)
+2026-10-29 00:39:37,824 [ERROR] Gagal mengupdate lowongan ID 41: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:39:39,127 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:39:39,129 [INFO] Evaluasi berhasil [Yusuf Alfi]: Backend Developer | Skor: 80
+2026-10-29 00:39:39,129 [INFO]   ✅ MATCHED (80) | Backend Developer
+2026-10-29 00:39:39,377 [ERROR] Gagal mengupdate lowongan ID 42: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:39:41,368 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:39:41,369 [INFO] Evaluasi berhasil [Yusuf Alfi]: IT Developer, (ERP Odoo Implementor) | Skor: 65
+2026-10-29 00:39:41,369 [INFO]   ❌ REJECTED (65) | IT Developer, (ERP Odoo Implementor)
+2026-10-29 00:39:41,952 [ERROR] Gagal mengupdate lowongan ID 43: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:39:43,121 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:39:43,122 [INFO] Evaluasi berhasil [Yusuf Alfi]: Odoo Technical Developer | Skor: 65
+2026-10-29 00:39:43,122 [INFO]   ❌ REJECTED (65) | Odoo Technical Developer
+2026-10-29 00:39:43,535 [ERROR] Gagal mengupdate lowongan ID 44: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:39:44,984 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-10-29 00:39:44,984 [ERROR] Gagal mengevaluasi lowongan: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{"score":65,"reason":"Kamu memiliki pengalaman yang relevan dengan backend development, seperti Express.js, Node.js, PostgreSQL, dan RESTful APIs, yang memenuhi sebagian besar kebutuhan teknis posisi ini. Namun, kamu belum menunjukkan pengalaman dengan Docker, Kubernetes, Helm, Golang, Redis, MQTT, atau Spring Boot, yang juga penting untuk peran Senior Backend Engineer. Selain itu, tidak ada bukti mengenai latar belakang pendidikan di bidang Information Systems atau Computer Science, serta ketertarikan khusus pada sektor transportasi dan layanan publik yang diharapkan oleh perusahaan. Dengan mempertimbangkan kelebihan dan kekurangan tersebut, skor kecocokan berada di kisaran 60‑74, yaitu 65.}}'}}
+2026-10-29 00:39:44,985 [INFO]   ❌ REJECTED (-1) | Senior Backend Engineer
+2026-10-29 00:39:45,227 [ERROR] Gagal mengupdate lowongan ID 45: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:39:45,408 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:39:47,562 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:39:51,971 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:39:51,972 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6742, Requested 1758. Please try again in 3.75s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:39:51,972 [INFO]   ❌ REJECTED (-1) | Backend (Golang) Developer
+2026-10-29 00:39:52,233 [ERROR] Gagal mengupdate lowongan ID 46: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:39:52,361 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:39:54,731 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:39:59,160 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:39:59,161 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5783, Requested 2453. Please try again in 1.77s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:39:59,161 [INFO]   ❌ REJECTED (-1) | IT Programmer
+2026-10-29 00:39:59,558 [ERROR] Gagal mengupdate lowongan ID 47: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:01,167 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:40:01,168 [INFO] Evaluasi berhasil [Yusuf Alfi]: GIS Application Developer | Skor: 35
+2026-10-29 00:40:01,168 [INFO]   ❌ REJECTED (35) | GIS Application Developer
+2026-10-29 00:40:01,409 [ERROR] Gagal mengupdate lowongan ID 48: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:01,581 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:03,876 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:08,051 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:08,052 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6633, Requested 1825. Please try again in 3.435s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:40:08,052 [INFO]   ❌ REJECTED (-1) | Back End Developer
+2026-10-29 00:40:08,367 [ERROR] Gagal mengupdate lowongan ID 49: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:08,786 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:11,054 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:15,264 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:15,264 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5672, Requested 2800. Please try again in 3.54s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:40:15,265 [INFO]   ❌ REJECTED (-1) | AI engineer
+2026-10-29 00:40:15,540 [ERROR] Gagal mengupdate lowongan ID 50: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:17,705 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:40:17,708 [INFO] Evaluasi berhasil [Yusuf Alfi]: AI Automation & AI Agent Developer | Skor: 65
+2026-10-29 00:40:17,708 [INFO]   ❌ REJECTED (65) | AI Automation & AI Agent Developer
+2026-10-29 00:40:18,091 [ERROR] Gagal mengupdate lowongan ID 51: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:18,314 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:20,502 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:24,663 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:24,663 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6487, Requested 1849. Please try again in 2.52s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:40:24,663 [INFO]   ❌ REJECTED (-1) | AI Engineer
+2026-10-29 00:40:25,108 [ERROR] Gagal mengupdate lowongan ID 52: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:25,334 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:27,586 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:32,986 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-10-29 00:40:32,987 [ERROR] Gagal mengevaluasi lowongan: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{"score":68,"reason":"Kamu memiliki latar belakang yang kuat di bidang pemrograman (Python, Node.js, SQL, PostgreSQL) dan pengalaman dengan platform otomasi seperti UiPath dan Power Automate, yang relevan dengan tugas membangun dan memelihara solusi AI & otomasi. Namun, CV tidak menunjukkan pengalaman konkret dalam memimpin proyek lintas fungsi dari discovery hingga rollout, serta tidak ada bukti penggunaan layanan AI/LLM atau penanganan keamanan data dan AI yang bertanggung jawab. Selain itu, tidak ada indikasi kemampuan bahasa Inggris yang diperlukan. Karena adanya kekurangan pada beberapa persyaratan penting, skor ditetapkan pada 68.}}'}}
+2026-10-29 00:40:32,987 [INFO]   ❌ REJECTED (-1) | Senior AI & Automation Engineer
+2026-10-29 00:40:33,269 [ERROR] Gagal mengupdate lowongan ID 53: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:33,506 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:35,889 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:40,061 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:40,062 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6829, Requested 3124. Please try again in 14.6475s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:40:40,062 [INFO]   ❌ REJECTED (-1) | AI and Automation Specialist
+2026-10-29 00:40:40,570 [ERROR] Gagal mengupdate lowongan ID 54: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:41,202 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:43,505 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:48,071 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:48,072 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5761, Requested 2894. Please try again in 4.9125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:40:48,072 [INFO]   ❌ REJECTED (-1) | IT & AI Automation Specialist
+2026-10-29 00:40:48,502 [ERROR] Gagal mengupdate lowongan ID 55: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:50,368 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:40:50,369 [INFO] Evaluasi berhasil [Yusuf Alfi]: AI Automation Engineer (CRM & Systems) | Skor: 65
+2026-10-29 00:40:50,369 [INFO]   ❌ REJECTED (65) | AI Automation Engineer (CRM & Systems)
+2026-10-29 00:40:50,586 [ERROR] Gagal mengupdate lowongan ID 56: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:50,834 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:53,155 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:57,308 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:40:57,308 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6566, Requested 2236. Please try again in 6.015s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:40:57,308 [INFO]   ❌ REJECTED (-1) | AI Transformation Senior Manager
+2026-10-29 00:40:57,784 [ERROR] Gagal mengupdate lowongan ID 57: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:40:58,023 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:00,272 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:06,067 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-10-29 00:41:06,068 [ERROR] Gagal mengevaluasi lowongan: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+2026-10-29 00:41:06,068 [INFO]   ❌ REJECTED (-1) | AI Automation & Solutions Engineer
+2026-10-29 00:41:06,516 [ERROR] Gagal mengupdate lowongan ID 58: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:06,717 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:09,054 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:13,366 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:13,366 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6763, Requested 2177. Please try again in 7.05s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:41:13,366 [INFO]   ❌ REJECTED (-1) | AI & Automation Engineer (AI Agents)
+2026-10-29 00:41:13,637 [ERROR] Gagal mengupdate lowongan ID 59: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:13,785 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:15,987 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:20,263 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:20,263 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5844, Requested 2167. Please try again in 82.499999ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:41:20,263 [INFO]   ❌ REJECTED (-1) | AI Automation & Industrial IoT Engineer
+2026-10-29 00:41:20,509 [ERROR] Gagal mengupdate lowongan ID 60: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:22,782 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:41:22,784 [INFO] Evaluasi berhasil [Yusuf Alfi]: Python Developer | Skor: 50
+2026-10-29 00:41:22,784 [INFO]   ❌ REJECTED (50) | Python Developer
+2026-10-29 00:41:23,229 [ERROR] Gagal mengupdate lowongan ID 61: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:23,443 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:25,637 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:30,292 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:30,293 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6581, Requested 1868. Please try again in 3.3675s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:41:30,293 [INFO]   ❌ REJECTED (-1) | Developer
+2026-10-29 00:41:30,579 [ERROR] Gagal mengupdate lowongan ID 62: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:30,767 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:34,059 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:41:34,060 [INFO] Evaluasi berhasil [Yusuf Alfi]: Go Developer | Skor: 45
+2026-10-29 00:41:34,060 [INFO]   ❌ REJECTED (45) | Go Developer
+2026-10-29 00:41:34,354 [ERROR] Gagal mengupdate lowongan ID 63: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:34,519 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:36,681 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:40,865 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:40,865 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6765, Requested 1808. Please try again in 4.297499999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:41:40,865 [INFO]   ❌ REJECTED (-1) | Java Developer
+2026-10-29 00:41:41,398 [ERROR] Gagal mengupdate lowongan ID 64: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:41,566 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:43,751 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:49,645 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:41:49,646 [INFO] Evaluasi berhasil [Yusuf Alfi]: IT Developer | Skor: 62
+2026-10-29 00:41:49,646 [INFO]   ❌ REJECTED (62) | IT Developer
+2026-10-29 00:41:49,925 [ERROR] Gagal mengupdate lowongan ID 65: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:50,092 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:52,252 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:56,464 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:41:56,465 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6460, Requested 1899. Please try again in 2.6925s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:41:56,465 [INFO]   ❌ REJECTED (-1) | .NET Developer
+2026-10-29 00:41:56,760 [ERROR] Gagal mengupdate lowongan ID 66: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:41:56,916 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:00,414 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:42:00,415 [INFO] Evaluasi berhasil [Yusuf Alfi]: Applications Developer | Skor: 55
+2026-10-29 00:42:00,415 [INFO]   ❌ REJECTED (55) | Applications Developer
+2026-10-29 00:42:00,854 [ERROR] Gagal mengupdate lowongan ID 67: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:01,043 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:03,209 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:07,394 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:07,394 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7014, Requested 1724. Please try again in 5.535s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:42:07,395 [INFO]   ❌ REJECTED (-1) | Frontend Developer
+2026-10-29 00:42:07,743 [ERROR] Gagal mengupdate lowongan ID 68: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:07,877 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:10,048 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:14,228 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:14,229 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6103, Requested 1902. Please try again in 37.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:42:14,229 [INFO]   ❌ REJECTED (-1) | Frontend Developer
+2026-10-29 00:42:14,540 [ERROR] Gagal mengupdate lowongan ID 69: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:14,725 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:18,297 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:42:18,298 [INFO] Evaluasi berhasil [Yusuf Alfi]: .NET Developer | Skor: 20
+2026-10-29 00:42:18,298 [INFO]   ❌ REJECTED (20) | .NET Developer
+2026-10-29 00:42:18,741 [ERROR] Gagal mengupdate lowongan ID 70: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:18,909 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:21,054 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:25,624 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:25,625 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6379, Requested 2158. Please try again in 4.0275s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:42:25,625 [INFO]   ❌ REJECTED (-1) | QA Automation Engineer AI Driven Testing
+2026-10-29 00:42:26,096 [ERROR] Gagal mengupdate lowongan ID 71: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:26,293 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:29,252 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:42:29,253 [INFO] Evaluasi berhasil [Yusuf Alfi]: AI Sales | Skor: 30
+2026-10-29 00:42:29,253 [INFO]   ❌ REJECTED (30) | AI Sales
+2026-10-29 00:42:29,661 [ERROR] Gagal mengupdate lowongan ID 72: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:30,377 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:32,548 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:36,732 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:36,733 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6309, Requested 2472. Please try again in 5.8575s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:42:36,733 [INFO]   ❌ REJECTED (-1) | AI ML Operator
+2026-10-29 00:42:37,171 [ERROR] Gagal mengupdate lowongan ID 73: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:37,502 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:41,112 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:42:41,112 [INFO] Evaluasi berhasil [Yusuf Alfi]: Generative AI Engineer | Skor: 45
+2026-10-29 00:42:41,112 [INFO]   ❌ REJECTED (45) | Generative AI Engineer
+2026-10-29 00:42:41,354 [ERROR] Gagal mengupdate lowongan ID 74: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:41,589 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:43,767 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:47,973 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:47,973 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6485, Requested 2214. Please try again in 5.2425s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:42:47,973 [INFO]   ❌ REJECTED (-1) | QA Automation Engineer
+2026-10-29 00:42:48,384 [ERROR] Gagal mengupdate lowongan ID 75: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:48,639 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:50,819 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:56,573 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:42:56,574 [INFO] Evaluasi berhasil [Yusuf Alfi]: Junior Tester Automation | Skor: 55
+2026-10-29 00:42:56,574 [INFO]   ❌ REJECTED (55) | Junior Tester Automation
+2026-10-29 00:42:56,821 [ERROR] Gagal mengupdate lowongan ID 76: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:42:56,997 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:42:59,237 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:03,558 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:03,559 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6401, Requested 2085. Please try again in 3.645s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:43:03,559 [INFO]   ❌ REJECTED (-1) | Senior QA Engineer Automation
+2026-10-29 00:43:03,849 [ERROR] Gagal mengupdate lowongan ID 77: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:43:04,061 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:06,282 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:11,685 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:43:11,686 [INFO] Evaluasi berhasil [Yusuf Alfi]: QA Automation & Performance Test | Skor: 55
+2026-10-29 00:43:11,686 [INFO]   ❌ REJECTED (55) | QA Automation & Performance Test
+2026-10-29 00:43:11,931 [ERROR] Gagal mengupdate lowongan ID 78: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:43:12,580 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:14,805 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:19,055 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:19,055 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6226, Requested 2194. Please try again in 3.15s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:43:19,056 [INFO]   ❌ REJECTED (-1) | Quality Assurance Automation Testing
+2026-10-29 00:43:19,377 [ERROR] Gagal mengupdate lowongan ID 79: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:43:19,584 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:43:23,206 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:43:23,210 [INFO] Evaluasi berhasil [Yusuf Alfi]: Senior Software Automation Quality Assurance | Skor: 65
+2026-10-29 00:43:23,210 [INFO]   ❌ REJECTED (65) | Senior Software Automation Quality Assurance
+2026-10-29 00:43:23,442 [ERROR] Gagal mengupdate lowongan ID 80: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'reason' column of 'job_opportunities' in the schema cache"}
+2026-10-29 00:43:23,444 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-29 00:51:46,922 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-29 00:51:46,923 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-29 00:51:47,425 [INFO] Berhasil memuat profil user dari DB -> User ID: 4, Nama: Yusuf Alfi
+2026-10-29 00:51:47,426 [INFO] User ID aktif: 4
+2026-10-29 00:51:47,426 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-29 00:51:47,427 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-29 00:51:47,427 [INFO] Maksimal Limit Data per Role: 10
+2026-10-29 00:51:47,427 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-29 00:51:47,531 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-29 00:51:48,876 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-29 00:51:48,987 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-29 00:51:48,988 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-29 00:51:48,992 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-29 00:51:48,993 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-29 00:51:49,342 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-29 00:51:49,397 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-29 00:51:49,398 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-29 00:51:53,193 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-29 00:51:54,240 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-29 00:51:54,840 [INFO] [DETAIL] Membuka tab (1/10): Junior Python Developer...
+2026-10-29 00:51:54,840 [INFO] [DETAIL] Membuka tab (2/10): Python Developer...
+2026-10-29 00:51:54,841 [INFO] [DETAIL] Membuka tab (3/10): Full Stack Developer, Python /...
+2026-10-29 00:51:54,842 [INFO] [DETAIL] Membuka tab (4/10): Software Developer (Python)...
+2026-10-29 00:51:54,843 [INFO] [DETAIL] Membuka tab (5/10): Python Developer...
+2026-10-29 00:51:57,719 [INFO] [PROGRES] Selesai 1/10 | Junior Python Developer
+2026-10-29 00:51:57,720 [INFO] [DETAIL] Membuka tab (6/10): Backend Developer (Golang)...
+2026-10-29 00:51:58,297 [INFO] [PROGRES] Selesai 2/10 | Software Developer (Pytho
+2026-10-29 00:51:58,298 [INFO] [DETAIL] Membuka tab (7/10): Python Developer...
+2026-10-29 00:51:58,495 [INFO] [PROGRES] Selesai 3/10 | Python Developer
+2026-10-29 00:51:58,495 [INFO] [DETAIL] Membuka tab (8/10): Junior Python Developer...
+2026-10-29 00:51:58,747 [INFO] [PROGRES] Selesai 4/10 | Full Stack Developer, Pyt
+2026-10-29 00:51:58,747 [INFO] [DETAIL] Membuka tab (9/10): Python Developer...
+2026-10-29 00:51:58,959 [INFO] [PROGRES] Selesai 5/10 | Python Developer
+2026-10-29 00:51:58,960 [INFO] [DETAIL] Membuka tab (10/10): Backend Developer (Python/Node...
+2026-10-29 00:52:00,251 [INFO] [PROGRES] Selesai 6/10 | Backend Developer (Golang
+2026-10-29 00:52:01,341 [INFO] [PROGRES] Selesai 7/10 | Backend Developer (Python
+2026-10-29 00:52:01,490 [INFO] [PROGRES] Selesai 8/10 | Python Developer
+2026-10-29 00:52:01,510 [INFO] [PROGRES] Selesai 9/10 | Junior Python Developer
+2026-10-29 00:52:01,696 [INFO] [PROGRES] Selesai 10/10 | Python Developer
+2026-10-29 00:52:01,696 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-29 00:52:01,696 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-29 00:52:01,697 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-29 00:52:04,111 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-29 00:52:05,125 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-29 00:52:05,469 [INFO] [DETAIL] Membuka tab (1/10): AI Automation & AI Agent Devel...
+2026-10-29 00:52:05,470 [INFO] [DETAIL] Membuka tab (2/10): Junior AI Developer (Full Remo...
+2026-10-29 00:52:05,470 [INFO] [DETAIL] Membuka tab (3/10): Customer Experience & Service ...
+2026-10-29 00:52:05,471 [INFO] [DETAIL] Membuka tab (4/10): Specialist, AI Automation...
+2026-10-29 00:52:05,471 [INFO] [DETAIL] Membuka tab (5/10): AI Engineer...
+2026-10-29 00:52:07,598 [INFO] [PROGRES] Selesai 1/10 | AI Engineer
+2026-10-29 00:52:07,599 [INFO] [DETAIL] Membuka tab (6/10): AI Automation & Solutions Engi...
+2026-10-29 00:52:08,023 [INFO] [PROGRES] Selesai 2/10 | Specialist, AI Automation
+2026-10-29 00:52:08,023 [INFO] [DETAIL] Membuka tab (7/10): AI Automation Engineer (CRM & ...
+2026-10-29 00:52:08,221 [INFO] [PROGRES] Selesai 3/10 | Customer Experience & Ser
+2026-10-29 00:52:08,222 [INFO] [DETAIL] Membuka tab (8/10): AI Engineer...
+2026-10-29 00:52:08,639 [INFO] [PROGRES] Selesai 4/10 | Junior AI Developer (Full
+2026-10-29 00:52:08,639 [INFO] [DETAIL] Membuka tab (9/10): AI and Automation Specialist...
+2026-10-29 00:52:08,850 [INFO] [PROGRES] Selesai 5/10 | AI Automation & AI Agent 
+2026-10-29 00:52:08,850 [INFO] [DETAIL] Membuka tab (10/10): AI Transformation Senior Manag...
+2026-10-29 00:52:10,357 [INFO] [PROGRES] Selesai 6/10 | AI Automation & Solutions
+2026-10-29 00:52:10,836 [INFO] [PROGRES] Selesai 7/10 | AI Automation Engineer (C
+2026-10-29 00:52:11,034 [INFO] [PROGRES] Selesai 8/10 | AI Transformation Senior 
+2026-10-29 00:52:11,114 [INFO] [PROGRES] Selesai 9/10 | AI and Automation Special
+2026-10-29 00:52:11,246 [INFO] [PROGRES] Selesai 10/10 | AI Engineer
+2026-10-29 00:52:11,246 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-29 00:52:11,702 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-29 00:52:11,733 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-29 00:52:11,734 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-29 00:52:25,404 [INFO] Berhasil menyinkronkan 40 dari 40 lowongan ke Supabase.
+2026-10-29 00:52:25,404 [INFO] Penyimpanan lowongan ke Supabase selesai.
+2026-10-29 00:52:25,404 [INFO] === MEMULAI PROSES EVALUASI AI (GROQ) ===
+2026-10-29 00:52:26,971 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:52:26,984 [INFO] Evaluasi berhasil [Yusuf Alfi]: Junior Python Developer | Skor: 65
+2026-10-29 00:52:26,985 [INFO]   ❌ REJECTED (65) | Junior Python Developer
+2026-10-29 00:52:27,433 [INFO] Berhasil mengupdate evaluasi ID 81 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:52:31,764 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:52:31,765 [INFO] Evaluasi berhasil [Yusuf Alfi]: Python Developer | Skor: 57
+2026-10-29 00:52:31,766 [INFO]   ❌ REJECTED (57) | Python Developer
+2026-10-29 00:52:32,007 [INFO] Berhasil mengupdate evaluasi ID 82 -> Status: REJECTED (Skor: 57)
+2026-10-29 00:52:36,236 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:52:36,237 [INFO] Evaluasi berhasil [Yusuf Alfi]: Full Stack Developer, Python / React / Typescript | Skor: 60
+2026-10-29 00:52:36,237 [INFO]   ❌ REJECTED (60) | Full Stack Developer, Python / React / Typescript
+2026-10-29 00:52:36,461 [INFO] Berhasil mengupdate evaluasi ID 83 -> Status: REJECTED (Skor: 60)
+2026-10-29 00:52:40,776 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:52:40,776 [INFO] Evaluasi berhasil [Yusuf Alfi]: Software Developer (Python) | Skor: 65
+2026-10-29 00:52:40,777 [INFO]   ❌ REJECTED (65) | Software Developer (Python)
+2026-10-29 00:52:41,085 [INFO] Berhasil mengupdate evaluasi ID 84 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:52:44,928 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:52:44,929 [INFO] Evaluasi berhasil [Yusuf Alfi]: Python Developer | Skor: 72
+2026-10-29 00:52:44,929 [INFO]   ❌ REJECTED (72) | Python Developer
+2026-10-29 00:52:45,338 [INFO] Berhasil mengupdate evaluasi ID 85 -> Status: REJECTED (Skor: 72)
+2026-10-29 00:52:48,501 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:52:51,374 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:52:51,375 [INFO] Evaluasi berhasil [Yusuf Alfi]: Backend Developer (Golang) | Skor: 65
+2026-10-29 00:52:51,375 [INFO]   ❌ REJECTED (65) | Backend Developer (Golang)
+2026-10-29 00:52:51,624 [INFO] Berhasil mengupdate evaluasi ID 86 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:52:54,898 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:52:57,064 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:01,213 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:01,213 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6300, Requested 1883. Please try again in 1.3725s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:53:01,213 [INFO]   ❌ REJECTED (-1) | Python Developer
+2026-10-29 00:53:01,704 [INFO] Berhasil mengupdate evaluasi ID 87 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:53:06,455 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:53:06,459 [INFO] Evaluasi berhasil [Yusuf Alfi]: Junior Python Developer | Skor: 65
+2026-10-29 00:53:06,460 [INFO]   ❌ REJECTED (65) | Junior Python Developer
+2026-10-29 00:53:06,682 [INFO] Berhasil mengupdate evaluasi ID 88 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:53:10,293 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:12,625 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:16,774 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:16,775 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6385, Requested 1742. Please try again in 952.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:53:16,775 [INFO]   ❌ REJECTED (-1) | Python Developer
+2026-10-29 00:53:17,034 [INFO] Berhasil mengupdate evaluasi ID 89 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:53:21,331 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:53:21,332 [INFO] Evaluasi berhasil [Yusuf Alfi]: Backend Developer (Python/Node.js) | Skor: 65
+2026-10-29 00:53:21,332 [INFO]   ❌ REJECTED (65) | Backend Developer (Python/Node.js)
+2026-10-29 00:53:21,555 [INFO] Berhasil mengupdate evaluasi ID 90 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:53:24,755 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:26,923 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:31,076 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:31,077 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6354, Requested 1916. Please try again in 2.025s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:53:31,077 [INFO]   ❌ REJECTED (-1) | AI Automation & AI Agent Developer
+2026-10-29 00:53:31,345 [INFO] Berhasil mengupdate evaluasi ID 91 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:53:35,357 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:53:35,358 [INFO] Evaluasi berhasil [Yusuf Alfi]: Junior AI Developer (Full Remote) | Skor: 65
+2026-10-29 00:53:35,358 [INFO]   ❌ REJECTED (65) | Junior AI Developer (Full Remote)
+2026-10-29 00:53:35,739 [INFO] Berhasil mengupdate evaluasi ID 92 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:53:39,086 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:41,453 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:45,679 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:45,680 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6495, Requested 1767. Please try again in 1.965s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:53:45,680 [INFO]   ❌ REJECTED (-1) | Customer Experience & Service Quality Officer
+2026-10-29 00:53:46,160 [INFO] Berhasil mengupdate evaluasi ID 93 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:53:50,898 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-10-29 00:53:50,899 [ERROR] Gagal mengevaluasi lowongan: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+2026-10-29 00:53:50,899 [INFO]   ❌ REJECTED (-1) | Specialist, AI Automation
+2026-10-29 00:53:51,402 [INFO] Berhasil mengupdate evaluasi ID 94 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:53:54,617 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:53:57,656 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-10-29 00:53:57,657 [ERROR] Gagal mengevaluasi lowongan: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{"score":45,"reason":"Kamu memiliki pengalaman dengan Python, API, database, dan otomasi, yang memang relevan dengan beberapa tugas di posisi ini. Namun, lowongan AI Engineer menuntut pengalaman mendalam dalam membangun, melatih, dan menerapkan model AI/ML menggunakan framework seperti TensorFlow, PyTorch, atau Scikit-learn, serta pemahaman tentang evaluasi model, deep learning, dan pemrosesan data. Informasi profil Kamu tidak menunjukkan pengalaman atau keahlian tersebut, dan tidak ada indikasi penggunaan platform cloud (AWS, GCP, Azure) yang juga menjadi persyaratan penting. Karena kekurangan bukti pada kompetensi inti AI/ML, kecocokan dianggap terbatas.}}'}}
+2026-10-29 00:53:57,657 [INFO]   ❌ REJECTED (-1) | AI Engineer
+2026-10-29 00:53:58,007 [INFO] Berhasil mengupdate evaluasi ID 95 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:54:01,220 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:03,440 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:07,647 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:07,647 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6504, Requested 1805. Please try again in 2.3175s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:54:07,647 [INFO]   ❌ REJECTED (-1) | AI Automation & Solutions Engineer
+2026-10-29 00:54:08,142 [INFO] Berhasil mengupdate evaluasi ID 96 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:54:12,563 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:54:12,564 [INFO] Evaluasi berhasil [Yusuf Alfi]: AI Automation Engineer (CRM & Systems) | Skor: 65
+2026-10-29 00:54:12,565 [INFO]   ❌ REJECTED (65) | AI Automation Engineer (CRM & Systems)
+2026-10-29 00:54:12,855 [INFO] Berhasil mengupdate evaluasi ID 97 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:54:16,063 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:18,273 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:22,478 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:22,479 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6679, Requested 1729. Please try again in 3.059999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:54:22,479 [INFO]   ❌ REJECTED (-1) | AI Engineer
+2026-10-29 00:54:22,748 [INFO] Berhasil mengupdate evaluasi ID 98 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:54:25,963 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:28,170 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:33,501 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:54:33,502 [INFO] Evaluasi berhasil [Yusuf Alfi]: AI and Automation Specialist | Skor: 65
+2026-10-29 00:54:33,502 [INFO]   ❌ REJECTED (65) | AI and Automation Specialist
+2026-10-29 00:54:33,762 [INFO] Berhasil mengupdate evaluasi ID 99 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:54:36,969 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:39,183 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:43,388 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:43,389 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6621, Requested 1981. Please try again in 4.515s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:54:43,389 [INFO]   ❌ REJECTED (-1) | AI Transformation Senior Manager
+2026-10-29 00:54:43,704 [INFO] Berhasil mengupdate evaluasi ID 100 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:54:47,692 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:54:47,693 [INFO] Evaluasi berhasil [Yusuf Alfi]: Python Developer | Skor: 65
+2026-10-29 00:54:47,693 [INFO]   ❌ REJECTED (65) | Python Developer
+2026-10-29 00:54:47,953 [INFO] Berhasil mengupdate evaluasi ID 101 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:54:51,156 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:53,360 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:57,565 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:54:57,565 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6434, Requested 1700. Please try again in 1.005s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:54:57,565 [INFO]   ❌ REJECTED (-1) | Developer
+2026-10-29 00:54:57,869 [INFO] Berhasil mengupdate evaluasi ID 102 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:55:01,808 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:55:01,809 [INFO] Evaluasi berhasil [Yusuf Alfi]: Go Developer | Skor: 45
+2026-10-29 00:55:01,809 [INFO]   ❌ REJECTED (45) | Go Developer
+2026-10-29 00:55:02,071 [INFO] Berhasil mengupdate evaluasi ID 103 -> Status: REJECTED (Skor: 45)
+2026-10-29 00:55:05,277 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:07,482 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:12,589 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:55:12,590 [INFO] Evaluasi berhasil [Yusuf Alfi]: Java Developer | Skor: 45
+2026-10-29 00:55:12,590 [INFO]   ❌ REJECTED (45) | Java Developer
+2026-10-29 00:55:12,907 [INFO] Berhasil mengupdate evaluasi ID 104 -> Status: REJECTED (Skor: 45)
+2026-10-29 00:55:16,119 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:18,328 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:24,066 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:55:24,067 [INFO] Evaluasi berhasil [Yusuf Alfi]: IT Developer | Skor: 65
+2026-10-29 00:55:24,067 [INFO]   ❌ REJECTED (65) | IT Developer
+2026-10-29 00:55:24,496 [INFO] Berhasil mengupdate evaluasi ID 105 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:55:27,706 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:29,914 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:34,189 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:34,189 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6280, Requested 1761. Please try again in 307.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:55:34,189 [INFO]   ❌ REJECTED (-1) | .NET Developer
+2026-10-29 00:55:34,482 [INFO] Berhasil mengupdate evaluasi ID 106 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:55:39,123 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:55:39,125 [INFO] Evaluasi berhasil [Yusuf Alfi]: Applications Developer | Skor: 65
+2026-10-29 00:55:39,126 [INFO]   ❌ REJECTED (65) | Applications Developer
+2026-10-29 00:55:39,398 [INFO] Berhasil mengupdate evaluasi ID 107 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:55:42,565 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:44,789 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:49,969 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:55:49,970 [INFO] Evaluasi berhasil [Yusuf Alfi]: Frontend Developer | Skor: 70
+2026-10-29 00:55:49,970 [INFO]   ❌ REJECTED (70) | Frontend Developer
+2026-10-29 00:55:50,333 [INFO] Berhasil mengupdate evaluasi ID 108 -> Status: REJECTED (Skor: 70)
+2026-10-29 00:55:53,557 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:55,702 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:59,872 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:55:59,872 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6250, Requested 1877. Please try again in 952.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:55:59,873 [INFO]   ❌ REJECTED (-1) | Frontend Developer
+2026-10-29 00:56:00,149 [INFO] Berhasil mengupdate evaluasi ID 109 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:56:04,610 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:56:04,612 [INFO] Evaluasi berhasil [Yusuf Alfi]: .NET Developer | Skor: 45
+2026-10-29 00:56:04,612 [INFO]   ❌ REJECTED (45) | .NET Developer
+2026-10-29 00:56:04,907 [INFO] Berhasil mengupdate evaluasi ID 110 -> Status: REJECTED (Skor: 45)
+2026-10-29 00:56:08,084 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:10,231 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:14,552 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:14,552 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6250, Requested 1977. Please try again in 1.7025s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:56:14,552 [INFO]   ❌ REJECTED (-1) | QA Automation Engineer AI Driven Testing
+2026-10-29 00:56:14,812 [INFO] Berhasil mengupdate evaluasi ID 111 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:56:18,682 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:56:18,683 [INFO] Evaluasi berhasil [Yusuf Alfi]: AI Sales | Skor: 30
+2026-10-29 00:56:18,684 [INFO]   ❌ REJECTED (30) | AI Sales
+2026-10-29 00:56:18,968 [INFO] Berhasil mengupdate evaluasi ID 112 -> Status: REJECTED (Skor: 30)
+2026-10-29 00:56:22,118 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:24,300 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:28,456 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:28,456 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5756, Requested 2251. Please try again in 52.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:56:28,457 [INFO]   ❌ REJECTED (-1) | AI ML Operator
+2026-10-29 00:56:28,686 [INFO] Berhasil mengupdate evaluasi ID 113 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:56:32,593 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:56:32,593 [INFO] Evaluasi berhasil [Yusuf Alfi]: Generative AI Engineer | Skor: 45
+2026-10-29 00:56:32,594 [INFO]   ❌ REJECTED (45) | Generative AI Engineer
+2026-10-29 00:56:32,818 [INFO] Berhasil mengupdate evaluasi ID 114 -> Status: REJECTED (Skor: 45)
+2026-10-29 00:56:36,053 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:38,153 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:43,322 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:56:43,322 [INFO] Evaluasi berhasil [Yusuf Alfi]: QA Automation Engineer | Skor: 65
+2026-10-29 00:56:43,323 [INFO]   ❌ REJECTED (65) | QA Automation Engineer
+2026-10-29 00:56:43,598 [INFO] Berhasil mengupdate evaluasi ID 115 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:56:46,700 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:48,793 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:56:55,142 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:56:55,143 [INFO] Evaluasi berhasil [Yusuf Alfi]: Junior Tester Automation | Skor: 65
+2026-10-29 00:56:55,144 [INFO]   ❌ REJECTED (65) | Junior Tester Automation
+2026-10-29 00:56:55,390 [INFO] Berhasil mengupdate evaluasi ID 116 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:56:58,501 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:00,601 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:04,708 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:04,709 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6359, Requested 2154. Please try again in 3.8475s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:57:04,709 [INFO]   ❌ REJECTED (-1) | Senior QA Engineer Automation
+2026-10-29 00:57:04,948 [INFO] Berhasil mengupdate evaluasi ID 117 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:57:09,302 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:57:09,303 [INFO] Evaluasi berhasil [Yusuf Alfi]: QA Automation & Performance Test | Skor: 62
+2026-10-29 00:57:09,303 [INFO]   ❌ REJECTED (62) | QA Automation & Performance Test
+2026-10-29 00:57:09,545 [INFO] Berhasil mengupdate evaluasi ID 118 -> Status: REJECTED (Skor: 62)
+2026-10-29 00:57:12,654 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:14,767 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:18,878 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:18,879 [ERROR] Groq rate limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m5gvbdzke85b3bq7yk0rdt0h` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6425, Requested 2183. Please try again in 4.56s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-10-29 00:57:18,879 [INFO]   ❌ REJECTED (-1) | Quality Assurance Automation Testing
+2026-10-29 00:57:19,307 [INFO] Berhasil mengupdate evaluasi ID 119 -> Status: REJECTED (Skor: -1)
+2026-10-29 00:57:22,407 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-29 00:57:25,911 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-29 00:57:25,912 [INFO] Evaluasi berhasil [Yusuf Alfi]: Senior Software Automation Quality Assurance | Skor: 65
+2026-10-29 00:57:25,912 [INFO]   ❌ REJECTED (65) | Senior Software Automation Quality Assurance
+2026-10-29 00:57:26,374 [INFO] Berhasil mengupdate evaluasi ID 120 -> Status: REJECTED (Skor: 65)
+2026-10-29 00:57:29,376 [INFO] === ORKESTRASI & PIPELINE SELESAI ===

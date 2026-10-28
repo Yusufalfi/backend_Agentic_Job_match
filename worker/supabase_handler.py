@@ -91,6 +91,9 @@
 #         return ["python developer", "ai automation"]
 
 
+
+
+
 import os
 import logging
 from dotenv import load_dotenv
@@ -122,43 +125,50 @@ class SupabaseHandler:
             }
             logging.info("SupabaseHandler berhasil diinisialisasi.")
 
-    def save_jobs(self, jobs: list, user_id: int = None) -> int:
-        """Menyimpan list lowongan ke tabel 'job_opportunities' lengkap dengan user_id."""
+    def save_jobs(self, jobs: list, user_id: int = None) -> list:
+        """Menyimpan list lowongan ke tabel 'job_opportunities' dan mengembalikan data beserta ID-nya."""
         if not self.is_active:
-            return 0
+            return []
 
-        saved_count = 0
+        saved_jobs_with_id = []
+        post_headers = self.headers.copy()
+        post_headers["Prefer"] = "resolution=merge-duplicates, return=representation"
+
         for job in jobs:
             try:
                 job_data = job.copy()
                 
-                # Masukkan user_id jika ada
                 if user_id:
                     job_data["user_id"] = user_id
                 
-                # Mapping salary_text ke salary jika diperlukan
                 if "salary_text" in job_data:
                     job_data["salary"] = job_data.pop("salary_text")
 
                 response = requests.post(
                     self.jobs_endpoint,
                     json=job_data,
-                    headers=self.headers,
+                    headers=post_headers,
                     verify=False,
                     timeout=10
                 )
-                if response.status_code in [200, 201, 204]:
-                    saved_count += 1
+                
+                if response.status_code in [200, 201]:
+                    inserted_data = response.json()
+                    if inserted_data and len(inserted_data) > 0:
+                        saved_jobs_with_id.append(inserted_data[0])
+                    else:
+                        saved_jobs_with_id.append(job_data)
                 else:
-                    logging.error(f"Gagal simpan job_id {job_data.get('job_id')}: {response.text}")
+                    logging.error(f"Gagal simpan lowongan: {response.text}")
+                    
             except Exception as e:
-                logging.error(f"Gagal menyimpan job_id {job.get('job_id')}: {e}")
+                logging.error(f"Gagal menyimpan lowongan: {e}")
 
-        logging.info(f"Berhasil menyinkronkan pencatatan {saved_count} dari {len(jobs)} lowongan ke Supabase.")
-        return saved_count
+        logging.info(f"Berhasil menyinkronkan {len(saved_jobs_with_id)} dari {len(jobs)} lowongan ke Supabase.")
+        return saved_jobs_with_id
 
     def fetch_user_profile(self) -> dict:
-        """Mengambil data user (id dan target_roles) secara dinamis dari tabel 'users'."""
+        """Mengambil data user aktif secara dinamis dari tabel 'users'."""
         default_profile = {
             "user_id": None,
             "target_roles": ["python developer", "ai automation"]
@@ -168,7 +178,7 @@ class SupabaseHandler:
 
         try:
             response = requests.get(
-                f"{self.users_endpoint}?select=id,target_roles",
+                f"{self.users_endpoint}?select=id,full_name,target_roles,parsed_skills",
                 headers=self.headers,
                 verify=False,
                 timeout=10
@@ -179,9 +189,11 @@ class SupabaseHandler:
                     user = users_data[0]
                     profile = {
                         "user_id": user.get("id"),
-                        "target_roles": user.get("target_roles", default_profile["target_roles"])
+                        "full_name": user.get("full_name", "Kandidat"),
+                        "target_roles": user.get("target_roles", default_profile["target_roles"]),
+                        "parsed_skills": user.get("parsed_skills", "Tidak disebutkan")
                     }
-                    logging.info(f"Berhasil memuat profil user dari DB -> User ID: {profile['user_id']}, Roles: {profile['target_roles']}")
+                    logging.info(f"Berhasil memuat profil user dari DB -> User ID: {profile['user_id']}, Nama: {profile['full_name']}")
                     return profile
             
             logging.warning("Gagal memuat profil user dari DB, menggunakan default fallback.")
@@ -190,7 +202,38 @@ class SupabaseHandler:
             
         return default_profile
 
+    def update_job_evaluation(self, job_id, evaluation_status: str, ai_score: int, ai_reason: str):
+        """Mengupdate evaluation_status, ai_score, dan ai_reason berdasarkan kolom asli di Supabase."""
+        if not self.is_active or not job_id:
+            return False
+
+        try:
+            update_url = f"{self.jobs_endpoint}?id=eq.{job_id}"
+            payload = {
+                "evaluation_status": evaluation_status,
+                "ai_score": ai_score,
+                "ai_reason": ai_reason
+            }
+
+            response = requests.patch(
+                update_url,
+                json=payload,
+                headers=self.headers,
+                verify=False,
+                timeout=10
+            )
+
+            if response.status_code in [200, 204]:
+                logging.info(f"Berhasil mengupdate evaluasi ID {job_id} -> Status: {evaluation_status} (Skor: {ai_score})")
+                return True
+            else:
+                logging.error(f"Gagal mengupdate lowongan ID {job_id}: {response.text}")
+                return False
+                
+        except Exception as e:
+            logging.error(f"Terjadi kesalahan saat mengupdate lowongan ID {job_id}: {e}")
+            return False
+
     def fetch_target_roles(self) -> list:
-        """Fungsi fallback untuk kompatibilitas jika terpanggil."""
         profile = self.fetch_user_profile()
         return profile["target_roles"]

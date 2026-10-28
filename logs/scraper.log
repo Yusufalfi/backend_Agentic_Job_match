@@ -1,0 +1,1145 @@
+2026-10-28 12:52:03,270 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 12:52:03,271 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 12:52:03,272 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 12:52:03,273 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 12:52:03,274 [INFO] === MEMULAI SCRAPING KALBRR VIA NEXT.JS API UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 12:52:04,105 [INFO] Mengambil data Kalibrr untuk role 'python developer' (offset: 0)
+2026-10-28 12:52:04,521 [ERROR] Error pada Kalibrr scraper untuk role 'python developer': [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 12:52:04,523 [INFO] Mengambil data Kalibrr untuk role 'ai automation' (offset: 0)
+2026-10-28 12:52:04,565 [ERROR] Error pada Kalibrr scraper untuk role 'ai automation': [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 12:52:04,567 [INFO] === SCRAPING KALBRR SELESAI. Total terkumpul: 0 ===
+2026-10-28 12:52:08,427 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 12:52:08,428 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 12:52:36,454 [ERROR] Gagal memproses role 'python developer': Page.goto: net::ERR_EMPTY_RESPONSE at https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 12:52:36,454 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 12:52:36,455 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 12:53:01,713 [ERROR] Gagal memproses role 'ai automation': Page.goto: net::ERR_EMPTY_RESPONSE at https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 12:53:01,787 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 0 ===
+2026-10-28 12:53:01,807 [INFO] ================ATURAN HASIL GABUNGAN================
+2026-10-28 12:53:01,807 [INFO] Total dari JobStreet : 0 lowongan
+2026-10-28 12:53:01,807 [INFO] Total dari Kalibrr   : 0 lowongan
+2026-10-28 12:53:01,807 [INFO] Total Keseluruhan    : 0 lowongan
+2026-10-28 12:53:01,807 [INFO] =====================================================
+2026-10-28 13:04:56,511 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 13:04:56,519 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 13:04:56,519 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:04:56,524 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 13:04:56,524 [INFO] === MEMULAI SCRAPING KALBRR VIA NEXT.JS API UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:04:56,752 [INFO] Mengambil data Kalibrr untuk role 'python developer' (offset: 0)...
+2026-10-28 13:04:57,652 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:04:57,746 [INFO] === SCRAPING KALBRR SELESAI. Total terkumpul: 10 ===
+2026-10-28 13:05:02,267 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 13:05:02,282 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 13:05:07,789 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 13:05:09,788 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 13:05:12,323 [INFO] [DETAIL] Membuka tab (1/30): Python Developer...
+2026-10-28 13:05:12,325 [INFO] [DETAIL] Membuka tab (2/30): Backend Developer (Golang)...
+2026-10-28 13:05:12,327 [INFO] [DETAIL] Membuka tab (3/30): Senior Backend Engineer...
+2026-10-28 13:05:12,329 [INFO] [DETAIL] Membuka tab (4/30): Backend (Golang) Developer...
+2026-10-28 13:05:12,331 [INFO] [DETAIL] Membuka tab (5/30): IT Programmer...
+2026-10-28 13:05:14,637 [INFO] [PROGRES] Selesai 1/30 | Backend Developer (Golang
+2026-10-28 13:05:14,638 [INFO] [DETAIL] Membuka tab (6/30): Backend Developer...
+2026-10-28 13:05:18,102 [INFO] [PROGRES] Selesai 2/30 | Backend (Golang) Develope
+2026-10-28 13:05:18,102 [INFO] [DETAIL] Membuka tab (7/30): Odoo Technical Developer...
+2026-10-28 13:05:20,597 [INFO] [PROGRES] Selesai 3/30 | Backend Developer
+2026-10-28 13:05:20,597 [INFO] [DETAIL] Membuka tab (8/30): Back End Developer...
+2026-10-28 13:05:21,246 [INFO] [PROGRES] Selesai 4/30 | Python Developer
+2026-10-28 13:05:21,247 [INFO] [DETAIL] Membuka tab (9/30): GIS Application Developer...
+2026-10-28 13:05:23,755 [INFO] [PROGRES] Selesai 5/30 | IT Programmer
+2026-10-28 13:05:23,756 [INFO] [DETAIL] Membuka tab (10/30): Full Stack Developer...
+2026-10-28 13:05:26,443 [INFO] [PROGRES] Selesai 6/30 | Odoo Technical Developer
+2026-10-28 13:05:26,444 [INFO] [DETAIL] Membuka tab (11/30): Senior Python Developer...
+2026-10-28 13:05:27,922 [INFO] [PROGRES] Selesai 7/30 | Senior Backend Engineer
+2026-10-28 13:05:27,923 [INFO] [DETAIL] Membuka tab (12/30): IT Developer, (ERP Odoo Implem...
+2026-10-28 13:05:29,806 [INFO] [PROGRES] Selesai 8/30 | Full Stack Developer
+2026-10-28 13:05:29,806 [INFO] [DETAIL] Membuka tab (13/30): Backend Developer...
+2026-10-28 13:05:32,705 [INFO] [PROGRES] Selesai 9/30 | Back End Developer
+2026-10-28 13:05:32,706 [INFO] [DETAIL] Membuka tab (14/30): AI engineer...
+2026-10-28 13:05:32,906 [INFO] [PROGRES] Selesai 10/30 | GIS Application Developer
+2026-10-28 13:05:32,907 [INFO] [DETAIL] Membuka tab (15/30): Backend Developer...
+2026-10-28 13:05:35,227 [INFO] [PROGRES] Selesai 11/30 | Senior Python Developer
+2026-10-28 13:05:35,228 [INFO] [DETAIL] Membuka tab (16/30): Data Warehouse Developer...
+2026-10-28 13:05:38,241 [INFO] [PROGRES] Selesai 12/30 | IT Developer, (ERP Odoo I
+2026-10-28 13:05:38,241 [INFO] [DETAIL] Membuka tab (17/30): Back End Developer...
+2026-10-28 13:05:38,468 [INFO] [PROGRES] Selesai 13/30 | Backend Developer
+2026-10-28 13:05:38,469 [INFO] [DETAIL] Membuka tab (18/30): AI & Machine Learning Engineer...
+2026-10-28 13:05:39,335 [INFO] [PROGRES] Selesai 14/30 | Data Warehouse Developer
+2026-10-28 13:05:39,336 [INFO] [DETAIL] Membuka tab (19/30): Programmer...
+2026-10-28 13:05:43,378 [INFO] [PROGRES] Selesai 15/30 | AI engineer
+2026-10-28 13:05:43,378 [INFO] [DETAIL] Membuka tab (20/30): ETL Developer...
+2026-10-28 13:05:44,231 [INFO] [PROGRES] Selesai 16/30 | Backend Developer
+2026-10-28 13:05:44,232 [INFO] [DETAIL] Membuka tab (21/30): Executive/AM Python Engineer...
+2026-10-28 13:05:44,722 [INFO] [PROGRES] Selesai 17/30 | Programmer
+2026-10-28 13:05:44,722 [INFO] [DETAIL] Membuka tab (22/30): AI Engineer (Full Time, WFO)...
+2026-10-28 13:05:50,692 [INFO] [PROGRES] Selesai 18/30 | Back End Developer
+2026-10-28 13:05:50,693 [INFO] [DETAIL] Membuka tab (23/30): AI Fullstack Software Engineer...
+2026-10-28 13:05:53,698 [INFO] [PROGRES] Selesai 19/30 | AI & Machine Learning Eng
+2026-10-28 13:05:53,698 [INFO] [DETAIL] Membuka tab (24/30): Data Engineer...
+2026-10-28 13:05:54,970 [INFO] [PROGRES] Selesai 20/30 | Executive/AM Python Engin
+2026-10-28 13:05:54,970 [INFO] [DETAIL] Membuka tab (25/30): IT DEVELOPER...
+2026-10-28 13:05:55,269 [INFO] [PROGRES] Selesai 21/30 | AI Engineer (Full Time, W
+2026-10-28 13:05:55,269 [INFO] [DETAIL] Membuka tab (26/30): Staf Software Development...
+2026-10-28 13:05:56,252 [INFO] [PROGRES] Selesai 22/30 | ETL Developer
+2026-10-28 13:05:56,253 [INFO] [DETAIL] Membuka tab (27/30): Junior Software Developer / St...
+2026-10-28 13:05:59,339 [INFO] [PROGRES] Selesai 23/30 | Junior Software Developer
+2026-10-28 13:05:59,340 [INFO] [DETAIL] Membuka tab (28/30): POWERBI ENGINEER...
+2026-10-28 13:06:00,280 [INFO] [PROGRES] Selesai 24/30 | AI Fullstack Software Eng
+2026-10-28 13:06:00,281 [INFO] [DETAIL] Membuka tab (29/30): Full Stack Developer, Python /...
+2026-10-28 13:06:03,810 [INFO] [PROGRES] Selesai 25/30 | Data Engineer
+2026-10-28 13:06:03,811 [INFO] [DETAIL] Membuka tab (30/30): Python Developer...
+2026-10-28 13:06:05,139 [INFO] [PROGRES] Selesai 26/30 | Staf Software Development
+2026-10-28 13:06:05,298 [INFO] [PROGRES] Selesai 27/30 | IT DEVELOPER
+2026-10-28 13:06:07,781 [INFO] [PROGRES] Selesai 28/30 | Full Stack Developer, Pyt
+2026-10-28 13:06:07,954 [INFO] [PROGRES] Selesai 29/30 | Python Developer
+2026-10-28 13:06:09,480 [INFO] [PROGRES] Selesai 30/30 | POWERBI ENGINEER
+2026-10-28 13:06:09,513 [INFO] Tombol 'Next' tidak ditemukan untuk role 'python developer'. Berarti sudah di halaman terakhir.
+2026-10-28 13:06:09,513 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 13:06:09,514 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 13:06:13,383 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 13:06:15,435 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 13:06:18,485 [INFO] [DETAIL] Membuka tab (1/28): AI Automation & AI Agent Devel...
+2026-10-28 13:06:18,490 [INFO] [DETAIL] Membuka tab (2/28): Senior AI & Automation Enginee...
+2026-10-28 13:06:18,493 [INFO] [DETAIL] Membuka tab (3/28): AI and Automation Specialist...
+2026-10-28 13:06:18,498 [INFO] [DETAIL] Membuka tab (4/28): IT & AI Automation Specialist...
+2026-10-28 13:06:18,503 [INFO] [DETAIL] Membuka tab (5/28): AI Automation Engineer (CRM & ...
+2026-10-28 13:06:20,807 [INFO] [PROGRES] Selesai 1/28 | Senior AI & Automation En
+2026-10-28 13:06:20,808 [INFO] [DETAIL] Membuka tab (6/28): AI Transformation Senior Manag...
+2026-10-28 13:06:21,005 [INFO] [PROGRES] Selesai 2/28 | AI and Automation Special
+2026-10-28 13:06:21,006 [INFO] [DETAIL] Membuka tab (7/28): AI Automation & Solutions Engi...
+2026-10-28 13:06:21,279 [INFO] [PROGRES] Selesai 3/28 | AI Automation & AI Agent 
+2026-10-28 13:06:21,280 [INFO] [DETAIL] Membuka tab (8/28): AI & Automation Engineer (AI A...
+2026-10-28 13:06:22,961 [INFO] [PROGRES] Selesai 4/28 | AI Transformation Senior 
+2026-10-28 13:06:22,961 [INFO] [DETAIL] Membuka tab (9/28): AI Automation & Industrial IoT...
+2026-10-28 13:06:24,407 [INFO] [PROGRES] Selesai 5/28 | AI Automation & Solutions
+2026-10-28 13:06:24,407 [INFO] [DETAIL] Membuka tab (10/28): AI Engineer...
+2026-10-28 13:06:28,345 [INFO] [PROGRES] Selesai 6/28 | AI Engineer
+2026-10-28 13:06:28,346 [INFO] [DETAIL] Membuka tab (11/28): Expert, AI Engineer...
+2026-10-28 13:06:34,573 [INFO] [PROGRES] Selesai 7/28 | Expert, AI Engineer
+2026-10-28 13:06:34,573 [INFO] [DETAIL] Membuka tab (12/28): Specialist, AI Automation...
+2026-10-28 13:06:38,256 [INFO] [PROGRES] Selesai 8/28 | Specialist, AI Automation
+2026-10-28 13:06:38,256 [INFO] [DETAIL] Membuka tab (13/28): AI/AX Engineer...
+2026-10-28 13:06:40,288 [INFO] [PROGRES] Selesai 9/28 | AI Automation Engineer (C
+2026-10-28 13:06:40,289 [INFO] [DETAIL] Membuka tab (14/28): Windows C/C++ - we pay for you...
+2026-10-28 13:06:41,392 [INFO] [PROGRES] Selesai 10/28 | AI & Automation Engineer 
+2026-10-28 13:06:41,392 [INFO] [DETAIL] Membuka tab (15/28): Lead Data Scientist (Analytics...
+2026-10-28 13:06:42,020 [INFO] [PROGRES] Selesai 11/28 | AI Automation & Industria
+2026-10-28 13:06:42,021 [INFO] [DETAIL] Membuka tab (16/28): AI Enablement Coordinator...
+2026-10-28 13:06:45,521 [INFO] [PROGRES] Selesai 12/28 | AI Enablement Coordinator
+2026-10-28 13:06:45,521 [INFO] [DETAIL] Membuka tab (17/28): SENIOR AI & FULLSTACK SOLUTION...
+2026-10-28 13:06:48,861 [INFO] [PROGRES] Selesai 13/28 | SENIOR AI & FULLSTACK SOL
+2026-10-28 13:06:48,866 [INFO] [DETAIL] Membuka tab (18/28): AI ENGINEER - 6 MONTHS CONTRAC...
+2026-10-28 13:06:49,957 [INFO] [PROGRES] Selesai 14/28 | AI/AX Engineer
+2026-10-28 13:06:49,958 [INFO] [DETAIL] Membuka tab (19/28): AI Engineer...
+2026-10-28 13:06:52,095 [INFO] [PROGRES] Selesai 15/28 | Lead Data Scientist (Anal
+2026-10-28 13:06:52,095 [INFO] [DETAIL] Membuka tab (20/28): L3 Technical SME – AI Compute...
+2026-10-28 13:06:52,582 [INFO] [PROGRES] Selesai 16/28 | AI ENGINEER - 6 MONTHS CO
+2026-10-28 13:06:52,582 [INFO] [DETAIL] Membuka tab (21/28): Principal Game Programmer (Unr...
+2026-10-28 13:06:55,077 [INFO] [PROGRES] Selesai 17/28 | IT & AI Automation Specia
+2026-10-28 13:06:55,079 [INFO] [DETAIL] Membuka tab (22/28): QA Automation Engineer...
+2026-10-28 13:06:57,602 [INFO] [PROGRES] Selesai 18/28 | Windows C/C++ - we pay fo
+2026-10-28 13:06:57,603 [INFO] [DETAIL] Membuka tab (23/28): Data Scientist (Product Analyt...
+2026-10-28 13:06:58,760 [INFO] [PROGRES] Selesai 19/28 | Principal Game Programmer
+2026-10-28 13:06:58,760 [INFO] [DETAIL] Membuka tab (24/28): AI & Machine Learning Engineer...
+2026-10-28 13:07:01,375 [INFO] [PROGRES] Selesai 20/28 | Data Scientist (Product A
+2026-10-28 13:07:01,376 [INFO] [DETAIL] Membuka tab (25/28): AI Engineer Intern...
+2026-10-28 13:07:05,194 [INFO] [PROGRES] Selesai 21/28 | AI Engineer
+2026-10-28 13:07:05,195 [INFO] [DETAIL] Membuka tab (26/28): Product Manager AI...
+2026-10-28 13:07:05,942 [INFO] [PROGRES] Selesai 22/28 | AI & Machine Learning Eng
+2026-10-28 13:07:05,942 [INFO] [DETAIL] Membuka tab (27/28): AI & Software Innovation Engin...
+2026-10-28 13:07:06,652 [INFO] [PROGRES] Selesai 23/28 | AI Engineer Intern
+2026-10-28 13:07:06,652 [INFO] [DETAIL] Membuka tab (28/28): Digital Marketing Manager (Tec...
+2026-10-28 13:07:06,938 [INFO] [PROGRES] Selesai 24/28 | QA Automation Engineer
+2026-10-28 13:07:08,877 [INFO] [PROGRES] Selesai 25/28 | AI & Software Innovation 
+2026-10-28 13:07:11,571 [INFO] [PROGRES] Selesai 26/28 | Digital Marketing Manager
+2026-10-28 13:07:11,806 [INFO] [PROGRES] Selesai 27/28 | L3 Technical SME – AI Com
+2026-10-28 13:07:14,215 [INFO] [PROGRES] Selesai 28/28 | Product Manager AI
+2026-10-28 13:07:14,255 [INFO] Tombol 'Next' tidak ditemukan untuk role 'ai automation'. Berarti sudah di halaman terakhir.
+2026-10-28 13:07:15,301 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 58 ===
+2026-10-28 13:07:15,366 [INFO] ================ATURAN HASIL GABUNGAN================
+2026-10-28 13:07:15,366 [INFO] Total dari JobStreet : 58 lowongan
+2026-10-28 13:07:15,366 [INFO] Total dari Kalibrr   : 10 lowongan
+2026-10-28 13:07:15,366 [INFO] Total Keseluruhan    : 68 lowongan
+2026-10-28 13:07:15,368 [INFO] =====================================================
+2026-10-28 13:14:46,542 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 13:14:46,543 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 13:14:46,545 [INFO] === MEMULAI SCRAPING KALBRR VIA NEXT.JS API UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:14:46,746 [INFO] Mengambil data Kalibrr untuk role 'python developer' | Offset: 0...
+2026-10-28 13:14:47,416 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:14:47,423 [INFO] API Kalibrr merespons 15 lowongan untuk offset 0
+2026-10-28 13:14:47,467 [INFO] === SCRAPING KALBRR SELESAI. Total terkumpul: 10 ===
+2026-10-28 13:19:53,977 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 13:19:53,977 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 13:19:53,977 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:19:53,977 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 13:19:53,977 [INFO] === MEMULAI SCRAPING KALBRR VIA NEXT.JS API UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:19:54,034 [INFO] Mengambil data Kalibrr untuk role 'python developer' | Offset: 0...
+2026-10-28 13:19:55,542 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:19:55,558 [INFO] API Kalibrr merespons 15 lowongan untuk offset 0
+2026-10-28 13:19:55,738 [INFO] === SCRAPING KALBRR SELESAI. Total terkumpul: 10 ===
+2026-10-28 13:19:56,900 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 13:19:56,900 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 13:20:00,889 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 13:20:01,957 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 13:20:05,572 [INFO] [DETAIL] Membuka tab (1/30): Python Developer...
+2026-10-28 13:20:05,574 [INFO] [DETAIL] Membuka tab (2/30): Backend Developer (Golang)...
+2026-10-28 13:20:05,576 [INFO] [DETAIL] Membuka tab (3/30): Backend Developer...
+2026-10-28 13:20:05,579 [INFO] [DETAIL] Membuka tab (4/30): Backend Developer...
+2026-10-28 13:20:05,582 [INFO] [DETAIL] Membuka tab (5/30): GIS Application Developer...
+2026-10-28 13:20:08,970 [INFO] [PROGRES] Selesai 1/30 | Backend Developer
+2026-10-28 13:20:08,970 [INFO] [DETAIL] Membuka tab (6/30): Junior Software Developer / St...
+2026-10-28 13:20:11,591 [INFO] [PROGRES] Selesai 2/30 | Junior Software Developer
+2026-10-28 13:20:11,591 [INFO] [DETAIL] Membuka tab (7/30): Senior Backend Engineer...
+2026-10-28 13:20:12,461 [INFO] [PROGRES] Selesai 3/30 | Python Developer
+2026-10-28 13:20:12,462 [INFO] [DETAIL] Membuka tab (8/30): IT DEVELOPER...
+2026-10-28 13:20:14,542 [INFO] [PROGRES] Selesai 4/30 | Senior Backend Engineer
+2026-10-28 13:20:14,543 [INFO] [DETAIL] Membuka tab (9/30): Back End Developer...
+2026-10-28 13:20:16,143 [INFO] [PROGRES] Selesai 5/30 | GIS Application Developer
+2026-10-28 13:20:16,144 [INFO] [DETAIL] Membuka tab (10/30): Backend Developer...
+2026-10-28 13:20:16,811 [INFO] [PROGRES] Selesai 6/30 | Backend Developer (Golang
+2026-10-28 13:20:16,812 [INFO] [DETAIL] Membuka tab (11/30): Programmer...
+2026-10-28 13:20:20,247 [INFO] [PROGRES] Selesai 7/30 | Backend Developer
+2026-10-28 13:20:20,248 [INFO] [DETAIL] Membuka tab (12/30): Staf Software Development...
+2026-10-28 13:20:20,673 [INFO] [PROGRES] Selesai 8/30 | Programmer
+2026-10-28 13:20:20,674 [INFO] [DETAIL] Membuka tab (13/30): IT Programmer...
+2026-10-28 13:20:22,167 [INFO] [PROGRES] Selesai 9/30 | IT DEVELOPER
+2026-10-28 13:20:22,167 [INFO] [DETAIL] Membuka tab (14/30): Backend (Golang) Developer...
+2026-10-28 13:20:24,504 [INFO] [PROGRES] Selesai 10/30 | Backend Developer
+2026-10-28 13:20:24,505 [INFO] [DETAIL] Membuka tab (15/30): POWERBI ENGINEER...
+2026-10-28 13:20:26,632 [INFO] [PROGRES] Selesai 11/30 | Back End Developer
+2026-10-28 13:20:26,633 [INFO] [DETAIL] Membuka tab (16/30): Java Developer...
+2026-10-28 13:20:27,660 [INFO] [PROGRES] Selesai 12/30 | Backend (Golang) Develope
+2026-10-28 13:20:27,660 [INFO] [DETAIL] Membuka tab (17/30): IT APPLICATION DEVELOPER...
+2026-10-28 13:20:29,288 [INFO] [PROGRES] Selesai 13/30 | Staf Software Development
+2026-10-28 13:20:29,289 [INFO] [DETAIL] Membuka tab (18/30): Back End Developer Staff...
+2026-10-28 13:20:30,811 [INFO] [PROGRES] Selesai 14/30 | IT Programmer
+2026-10-28 13:20:30,812 [INFO] [DETAIL] Membuka tab (19/30): Senior Python Developer...
+2026-10-28 13:20:33,446 [INFO] [PROGRES] Selesai 15/30 | POWERBI ENGINEER
+2026-10-28 13:20:33,447 [INFO] [DETAIL] Membuka tab (20/30): Data Engineer...
+2026-10-28 13:20:37,025 [INFO] [PROGRES] Selesai 16/30 | Data Engineer
+2026-10-28 13:20:37,026 [INFO] [DETAIL] Membuka tab (21/30): SOFTWARE DEVELOPER...
+2026-10-28 13:20:37,193 [INFO] [PROGRES] Selesai 17/30 | Java Developer
+2026-10-28 13:20:37,194 [INFO] [DETAIL] Membuka tab (22/30): Senior Golang Developer - Bank...
+2026-10-28 13:20:39,025 [INFO] [PROGRES] Selesai 18/30 | IT APPLICATION DEVELOPER
+2026-10-28 13:20:39,026 [INFO] [DETAIL] Membuka tab (23/30): Software Developer (Python)...
+2026-10-28 13:20:39,617 [INFO] [PROGRES] Selesai 19/30 | Senior Python Developer
+2026-10-28 13:20:39,618 [INFO] [DETAIL] Membuka tab (24/30): Python Developer...
+2026-10-28 13:20:40,015 [INFO] [PROGRES] Selesai 20/30 | Back End Developer Staff
+2026-10-28 13:20:40,015 [INFO] [DETAIL] Membuka tab (25/30): Python Developer...
+2026-10-28 13:20:43,918 [INFO] [PROGRES] Selesai 21/30 | Python Developer
+2026-10-28 13:20:43,918 [INFO] [DETAIL] Membuka tab (26/30): Python Developer...
+2026-10-28 13:20:44,665 [INFO] [PROGRES] Selesai 22/30 | Senior Golang Developer -
+2026-10-28 13:20:44,665 [INFO] [DETAIL] Membuka tab (27/30): Full Stack Developer, Python /...
+2026-10-28 13:20:47,481 [INFO] [PROGRES] Selesai 23/30 | Python Developer
+2026-10-28 13:20:47,481 [INFO] [DETAIL] Membuka tab (28/30): Junior Python Developer...
+2026-10-28 13:20:48,196 [INFO] [PROGRES] Selesai 24/30 | Python Developer
+2026-10-28 13:20:48,197 [INFO] [DETAIL] Membuka tab (29/30): Python Engineer...
+2026-10-28 13:20:48,409 [INFO] [PROGRES] Selesai 25/30 | Full Stack Developer, Pyt
+2026-10-28 13:20:48,409 [INFO] [DETAIL] Membuka tab (30/30): Python Developer...
+2026-10-28 13:20:49,706 [INFO] [PROGRES] Selesai 26/30 | SOFTWARE DEVELOPER
+2026-10-28 13:20:50,416 [INFO] [PROGRES] Selesai 27/30 | Junior Python Developer
+2026-10-28 13:20:51,992 [INFO] [PROGRES] Selesai 28/30 | Software Developer (Pytho
+2026-10-28 13:20:52,059 [INFO] [PROGRES] Selesai 29/30 | Python Developer
+2026-10-28 13:20:53,557 [INFO] [PROGRES] Selesai 30/30 | Python Engineer
+2026-10-28 13:20:53,576 [INFO] Tombol 'Next' tidak ditemukan untuk role 'python developer'. Berarti sudah di halaman terakhir.
+2026-10-28 13:20:53,577 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 13:20:53,577 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 13:20:57,234 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 13:20:58,481 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 13:21:01,063 [INFO] [DETAIL] Membuka tab (1/30): AI Automation & AI Agent Devel...
+2026-10-28 13:21:01,064 [INFO] [DETAIL] Membuka tab (2/30): AI Transformation Senior Manag...
+2026-10-28 13:21:01,066 [INFO] [DETAIL] Membuka tab (3/30): Specialist, AI Automation...
+2026-10-28 13:21:01,068 [INFO] [DETAIL] Membuka tab (4/30): IT Manager...
+2026-10-28 13:21:01,069 [INFO] [DETAIL] Membuka tab (5/30): AI Automation & Industrial IoT...
+2026-10-28 13:21:03,310 [INFO] [PROGRES] Selesai 1/30 | AI Automation & Industria
+2026-10-28 13:21:03,313 [INFO] [DETAIL] Membuka tab (6/30): AI Engineer...
+2026-10-28 13:21:04,431 [INFO] [PROGRES] Selesai 2/30 | IT Manager
+2026-10-28 13:21:04,432 [INFO] [DETAIL] Membuka tab (7/30): Digital Development & Producti...
+2026-10-28 13:21:05,576 [INFO] [PROGRES] Selesai 3/30 | Specialist, AI Automation
+2026-10-28 13:21:05,576 [INFO] [DETAIL] Membuka tab (8/30): AI Automation Engineer (CRM & ...
+2026-10-28 13:21:08,094 [INFO] [PROGRES] Selesai 4/30 | AI Automation Engineer (C
+2026-10-28 13:21:08,095 [INFO] [DETAIL] Membuka tab (9/30): Senior AI & Automation Enginee...
+2026-10-28 13:21:10,813 [INFO] [PROGRES] Selesai 5/30 | Senior AI & Automation En
+2026-10-28 13:21:10,814 [INFO] [DETAIL] Membuka tab (10/30): AI and Automation Specialist...
+2026-10-28 13:21:12,042 [INFO] [PROGRES] Selesai 6/30 | AI Transformation Senior 
+2026-10-28 13:21:12,042 [INFO] [DETAIL] Membuka tab (11/30): SENIOR AI & FULLSTACK SOLUTION...
+2026-10-28 13:21:12,452 [INFO] [PROGRES] Selesai 7/30 | AI Automation & AI Agent 
+2026-10-28 13:21:12,453 [INFO] [DETAIL] Membuka tab (12/30): AI/AX Engineer...
+2026-10-28 13:21:12,915 [INFO] [PROGRES] Selesai 8/30 | AI and Automation Special
+2026-10-28 13:21:12,915 [INFO] [DETAIL] Membuka tab (13/30): Head of Information Technology...
+2026-10-28 13:21:14,225 [INFO] [PROGRES] Selesai 9/30 | SENIOR AI & FULLSTACK SOL
+2026-10-28 13:21:14,226 [INFO] [DETAIL] Membuka tab (14/30): IT Developer Specialist...
+2026-10-28 13:21:16,087 [INFO] [PROGRES] Selesai 10/30 | AI Engineer
+2026-10-28 13:21:16,088 [INFO] [DETAIL] Membuka tab (15/30): Senior Business System Analyst...
+2026-10-28 13:21:16,184 [INFO] [PROGRES] Selesai 11/30 | Digital Development & Pro
+2026-10-28 13:21:16,184 [INFO] [DETAIL] Membuka tab (16/30): AI-Native Full-Stack TypeScrip...
+2026-10-28 13:21:18,899 [INFO] [PROGRES] Selesai 12/30 | AI-Native Full-Stack Type
+2026-10-28 13:21:18,900 [INFO] [DETAIL] Membuka tab (17/30): Business Manager - ERP Softwar...
+2026-10-28 13:21:20,478 [INFO] [PROGRES] Selesai 13/30 | Senior Business System An
+2026-10-28 13:21:20,480 [INFO] [DETAIL] Membuka tab (18/30): AI Automation & Solutions Engi...
+2026-10-28 13:21:20,880 [INFO] [PROGRES] Selesai 14/30 | AI/AX Engineer
+2026-10-28 13:21:20,881 [INFO] [DETAIL] Membuka tab (19/30): REVENUE MANAGER...
+2026-10-28 13:21:22,414 [INFO] [PROGRES] Selesai 15/30 | AI Automation & Solutions
+2026-10-28 13:21:22,414 [INFO] [DETAIL] Membuka tab (20/30): Senior Go-to-Market (GTM) Engi...
+2026-10-28 13:21:23,700 [INFO] [PROGRES] Selesai 16/30 | IT Developer Specialist
+2026-10-28 13:21:23,700 [INFO] [DETAIL] Membuka tab (21/30): Expert, AI Engineer...
+2026-10-28 13:21:24,157 [INFO] [PROGRES] Selesai 17/30 | Senior Go-to-Market (GTM)
+2026-10-28 13:21:24,158 [INFO] [DETAIL] Membuka tab (22/30): AI & Software Innovation Engin...
+2026-10-28 13:21:25,774 [INFO] [PROGRES] Selesai 18/30 | Head of Information Techn
+2026-10-28 13:21:25,775 [INFO] [DETAIL] Membuka tab (23/30): Head of Project Construction...
+2026-10-28 13:21:28,392 [INFO] [PROGRES] Selesai 19/30 | Head of Project Construct
+2026-10-28 13:21:28,393 [INFO] [DETAIL] Membuka tab (24/30): AI & Machine Learning Engineer...
+2026-10-28 13:21:30,807 [INFO] [PROGRES] Selesai 20/30 | Business Manager - ERP So
+2026-10-28 13:21:30,808 [INFO] [DETAIL] Membuka tab (25/30): Windows C/C++ - we pay for you...
+2026-10-28 13:21:31,184 [INFO] [PROGRES] Selesai 21/30 | REVENUE MANAGER
+2026-10-28 13:21:31,186 [INFO] [DETAIL] Membuka tab (26/30): HRGA Generalist...
+2026-10-28 13:21:31,683 [INFO] [PROGRES] Selesai 22/30 | Expert, AI Engineer
+2026-10-28 13:21:31,685 [INFO] [DETAIL] Membuka tab (27/30): QA Automation Engineer...
+2026-10-28 13:21:33,320 [INFO] [PROGRES] Selesai 23/30 | Windows C/C++ - we pay fo
+2026-10-28 13:21:33,320 [INFO] [DETAIL] Membuka tab (28/30): AI ENGINEER - 6 MONTHS CONTRAC...
+2026-10-28 13:21:34,541 [INFO] [PROGRES] Selesai 24/30 | AI & Software Innovation 
+2026-10-28 13:21:34,541 [INFO] [DETAIL] Membuka tab (29/30): CS Team Lead...
+2026-10-28 13:21:36,020 [INFO] [PROGRES] Selesai 25/30 | AI & Machine Learning Eng
+2026-10-28 13:21:36,022 [INFO] [DETAIL] Membuka tab (30/30): IT & AI Automation Specialist...
+2026-10-28 13:21:39,114 [INFO] [PROGRES] Selesai 26/30 | QA Automation Engineer
+2026-10-28 13:21:39,596 [INFO] [PROGRES] Selesai 27/30 | IT & AI Automation Specia
+2026-10-28 13:21:41,548 [INFO] [PROGRES] Selesai 28/30 | CS Team Lead
+2026-10-28 13:21:42,964 [INFO] [PROGRES] Selesai 29/30 | AI ENGINEER - 6 MONTHS CO
+2026-10-28 13:21:43,890 [INFO] [PROGRES] Selesai 30/30 | HRGA Generalist
+2026-10-28 13:21:43,918 [INFO] Tombol 'Next' tidak ditemukan untuk role 'ai automation'. Berarti sudah di halaman terakhir.
+2026-10-28 13:21:45,473 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 60 ===
+2026-10-28 13:21:45,522 [INFO] ================ATURAN HASIL GABUNGAN================
+2026-10-28 13:21:45,522 [INFO] Total dari JobStreet : 60 lowongan
+2026-10-28 13:21:45,523 [INFO] Total dari Kalibrr   : 10 lowongan
+2026-10-28 13:21:45,523 [INFO] Total Keseluruhan    : 70 lowongan
+2026-10-28 13:21:45,524 [INFO] =====================================================
+2026-10-28 13:28:02,519 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 13:28:02,519 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 13:28:02,522 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:28:02,522 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 13:28:02,522 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:28:02,630 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 13:28:03,691 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:28:03,883 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 13:28:03,906 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 13:28:04,240 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:28:04,262 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 13:28:04,264 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 13:28:07,800 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 13:28:07,803 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 13:28:33,166 [ERROR] Gagal memproses role 'python developer': Page.goto: net::ERR_EMPTY_RESPONSE at https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 13:28:33,167 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 13:28:33,167 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 13:28:35,703 [ERROR] Gagal memproses role 'ai automation': Page.goto: net::ERR_ABORTED at https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 13:28:36,007 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 0 ===
+2026-10-28 13:28:36,022 [INFO] ================ATURAN HASIL GABUNGAN================
+2026-10-28 13:28:36,022 [INFO] Total dari JobStreet : 0 lowongan
+2026-10-28 13:28:36,022 [INFO] Total dari Kalibrr   : 20 lowongan
+2026-10-28 13:28:36,023 [INFO] Total Keseluruhan    : 20 lowongan
+2026-10-28 13:28:36,024 [INFO] =====================================================
+2026-10-28 13:28:54,511 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 13:28:54,511 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 13:28:54,526 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:28:54,528 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 13:28:54,543 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:28:54,741 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 13:28:55,257 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:28:55,310 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 13:28:55,310 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 13:28:55,559 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:28:55,575 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 13:28:55,575 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 13:28:57,877 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 13:28:57,878 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 13:29:02,617 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 13:29:04,600 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 13:29:08,718 [INFO] [DETAIL] Membuka tab (1/30): Python Developer...
+2026-10-28 13:29:08,719 [INFO] [DETAIL] Membuka tab (2/30): Backend Developer (Golang)...
+2026-10-28 13:29:08,721 [INFO] [DETAIL] Membuka tab (3/30): Backend Developer...
+2026-10-28 13:29:08,723 [INFO] [DETAIL] Membuka tab (4/30): Backend Developer...
+2026-10-28 13:29:08,726 [INFO] [DETAIL] Membuka tab (5/30): GIS Application Developer...
+2026-10-28 13:29:11,000 [INFO] [PROGRES] Selesai 1/30 | Python Developer
+2026-10-28 13:29:11,001 [INFO] [DETAIL] Membuka tab (6/30): Junior Software Developer / St...
+2026-10-28 13:29:11,564 [INFO] [PROGRES] Selesai 2/30 | Backend Developer (Golang
+2026-10-28 13:29:11,566 [INFO] [DETAIL] Membuka tab (7/30): Senior Backend Engineer...
+2026-10-28 13:29:12,499 [INFO] [PROGRES] Selesai 3/30 | Junior Software Developer
+2026-10-28 13:29:12,499 [INFO] [DETAIL] Membuka tab (8/30): IT DEVELOPER...
+2026-10-28 13:29:14,836 [INFO] [PROGRES] Selesai 4/30 | IT DEVELOPER
+2026-10-28 13:29:14,838 [INFO] [DETAIL] Membuka tab (9/30): Back End Developer...
+2026-10-28 13:29:17,194 [INFO] [PROGRES] Selesai 5/30 | Backend Developer
+2026-10-28 13:29:17,195 [INFO] [DETAIL] Membuka tab (10/30): Backend Developer...
+2026-10-28 13:29:17,499 [INFO] [PROGRES] Selesai 6/30 | GIS Application Developer
+2026-10-28 13:29:17,499 [INFO] [DETAIL] Membuka tab (11/30): Programmer...
+2026-10-28 13:29:19,681 [INFO] [PROGRES] Selesai 7/30 | Back End Developer
+2026-10-28 13:29:19,683 [INFO] [DETAIL] Membuka tab (12/30): Staf Software Development...
+2026-10-28 13:29:20,240 [INFO] [PROGRES] Selesai 8/30 | Backend Developer
+2026-10-28 13:29:20,241 [INFO] [DETAIL] Membuka tab (13/30): IT Programmer...
+2026-10-28 13:29:21,550 [INFO] [PROGRES] Selesai 9/30 | Senior Backend Engineer
+2026-10-28 13:29:21,551 [INFO] [DETAIL] Membuka tab (14/30): Backend (Golang) Developer...
+2026-10-28 13:29:21,723 [INFO] [PROGRES] Selesai 10/30 | Staf Software Development
+2026-10-28 13:29:21,726 [INFO] [DETAIL] Membuka tab (15/30): POWERBI ENGINEER...
+2026-10-28 13:29:24,297 [INFO] [PROGRES] Selesai 11/30 | POWERBI ENGINEER
+2026-10-28 13:29:24,299 [INFO] [DETAIL] Membuka tab (16/30): Java Developer...
+2026-10-28 13:29:25,618 [INFO] [PROGRES] Selesai 12/30 | Programmer
+2026-10-28 13:29:25,618 [INFO] [DETAIL] Membuka tab (17/30): IT APPLICATION DEVELOPER...
+2026-10-28 13:29:28,355 [INFO] [PROGRES] Selesai 13/30 | Backend Developer
+2026-10-28 13:29:28,356 [INFO] [DETAIL] Membuka tab (18/30): Back End Developer Staff...
+2026-10-28 13:29:28,989 [INFO] [PROGRES] Selesai 14/30 | IT Programmer
+2026-10-28 13:29:28,990 [INFO] [DETAIL] Membuka tab (19/30): Senior Python Developer...
+2026-10-28 13:29:31,791 [INFO] [PROGRES] Selesai 15/30 | Senior Python Developer
+2026-10-28 13:29:31,792 [INFO] [DETAIL] Membuka tab (20/30): Data Engineer...
+2026-10-28 13:29:32,411 [INFO] [PROGRES] Selesai 16/30 | IT APPLICATION DEVELOPER
+2026-10-28 13:29:32,411 [INFO] [DETAIL] Membuka tab (21/30): SOFTWARE DEVELOPER...
+2026-10-28 13:29:33,509 [INFO] [PROGRES] Selesai 17/30 | Backend (Golang) Develope
+2026-10-28 13:29:33,510 [INFO] [DETAIL] Membuka tab (22/30): Senior Golang Developer - Bank...
+2026-10-28 13:29:34,083 [INFO] [PROGRES] Selesai 18/30 | Java Developer
+2026-10-28 13:29:34,084 [INFO] [DETAIL] Membuka tab (23/30): Software Developer (Python)...
+2026-10-28 13:29:39,116 [INFO] [PROGRES] Selesai 19/30 | Software Developer (Pytho
+2026-10-28 13:29:39,117 [INFO] [DETAIL] Membuka tab (24/30): Python Developer...
+2026-10-28 13:29:39,329 [INFO] [PROGRES] Selesai 20/30 | Back End Developer Staff
+2026-10-28 13:29:39,330 [INFO] [DETAIL] Membuka tab (25/30): Python Developer...
+2026-10-28 13:29:42,219 [INFO] [PROGRES] Selesai 21/30 | Data Engineer
+2026-10-28 13:29:42,220 [INFO] [DETAIL] Membuka tab (26/30): Python Developer...
+2026-10-28 13:29:43,463 [INFO] [PROGRES] Selesai 22/30 | Senior Golang Developer -
+2026-10-28 13:29:43,463 [INFO] [DETAIL] Membuka tab (27/30): Full Stack Developer, Python /...
+2026-10-28 13:29:43,780 [INFO] [PROGRES] Selesai 23/30 | SOFTWARE DEVELOPER
+2026-10-28 13:29:43,782 [INFO] [DETAIL] Membuka tab (28/30): Junior Python Developer...
+2026-10-28 13:29:44,386 [INFO] [PROGRES] Selesai 24/30 | Python Developer
+2026-10-28 13:29:44,387 [INFO] [DETAIL] Membuka tab (29/30): Python Engineer...
+2026-10-28 13:29:45,428 [INFO] [PROGRES] Selesai 25/30 | Full Stack Developer, Pyt
+2026-10-28 13:29:45,428 [INFO] [DETAIL] Membuka tab (30/30): Python Developer...
+2026-10-28 13:29:48,044 [INFO] [PROGRES] Selesai 26/30 | Python Developer
+2026-10-28 13:29:50,639 [INFO] [PROGRES] Selesai 27/30 | Python Engineer
+2026-10-28 13:29:51,456 [INFO] [PROGRES] Selesai 28/30 | Python Developer
+2026-10-28 13:29:54,392 [INFO] [PROGRES] Selesai 29/30 | Python Developer
+2026-10-28 13:29:58,018 [INFO] [PROGRES] Selesai 30/30 | Junior Python Developer
+2026-10-28 13:29:58,044 [INFO] Tombol 'Next' tidak ditemukan untuk role 'python developer'. Berarti sudah di halaman terakhir.
+2026-10-28 13:29:58,044 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 13:29:58,044 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 13:30:06,219 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 13:30:08,155 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 13:30:13,405 [INFO] [DETAIL] Membuka tab (1/30): AI Automation & AI Agent Devel...
+2026-10-28 13:30:13,408 [INFO] [DETAIL] Membuka tab (2/30): AI Transformation Senior Manag...
+2026-10-28 13:30:13,410 [INFO] [DETAIL] Membuka tab (3/30): Specialist, AI Automation...
+2026-10-28 13:30:13,412 [INFO] [DETAIL] Membuka tab (4/30): IT Manager...
+2026-10-28 13:30:13,418 [INFO] [DETAIL] Membuka tab (5/30): AI Automation & Industrial IoT...
+2026-10-28 13:30:16,083 [INFO] [PROGRES] Selesai 1/30 | AI Automation & AI Agent 
+2026-10-28 13:30:16,084 [INFO] [DETAIL] Membuka tab (6/30): AI Engineer...
+2026-10-28 13:30:16,332 [INFO] [PROGRES] Selesai 2/30 | AI Transformation Senior 
+2026-10-28 13:30:16,333 [INFO] [DETAIL] Membuka tab (7/30): Digital Development & Producti...
+2026-10-28 13:30:16,569 [INFO] [PROGRES] Selesai 3/30 | Specialist, AI Automation
+2026-10-28 13:30:16,569 [INFO] [DETAIL] Membuka tab (8/30): AI Automation Engineer (CRM & ...
+2026-10-28 13:30:18,878 [INFO] [PROGRES] Selesai 4/30 | AI Engineer
+2026-10-28 13:30:18,878 [INFO] [DETAIL] Membuka tab (9/30): Senior AI & Automation Enginee...
+2026-10-28 13:30:20,514 [INFO] [PROGRES] Selesai 5/30 | AI Automation & Industria
+2026-10-28 13:30:20,516 [INFO] [DETAIL] Membuka tab (10/30): AI and Automation Specialist...
+2026-10-28 13:30:22,008 [INFO] [PROGRES] Selesai 6/30 | Senior AI & Automation En
+2026-10-28 13:30:22,008 [INFO] [DETAIL] Membuka tab (11/30): SENIOR AI & FULLSTACK SOLUTION...
+2026-10-28 13:30:23,052 [INFO] [PROGRES] Selesai 7/30 | AI and Automation Special
+2026-10-28 13:30:23,054 [INFO] [DETAIL] Membuka tab (12/30): AI/AX Engineer...
+2026-10-28 13:30:23,766 [INFO] [PROGRES] Selesai 8/30 | AI Automation Engineer (C
+2026-10-28 13:30:23,767 [INFO] [DETAIL] Membuka tab (13/30): Head of Information Technology...
+2026-10-28 13:30:23,860 [INFO] [PROGRES] Selesai 9/30 | SENIOR AI & FULLSTACK SOL
+2026-10-28 13:30:23,861 [INFO] [DETAIL] Membuka tab (14/30): IT Developer Specialist...
+2026-10-28 13:30:25,355 [INFO] [PROGRES] Selesai 10/30 | AI/AX Engineer
+2026-10-28 13:30:25,355 [INFO] [DETAIL] Membuka tab (15/30): Senior Business System Analyst...
+2026-10-28 13:30:25,707 [INFO] [PROGRES] Selesai 11/30 | IT Manager
+2026-10-28 13:30:25,709 [INFO] [DETAIL] Membuka tab (16/30): AI-Native Full-Stack TypeScrip...
+2026-10-28 13:30:26,499 [INFO] [PROGRES] Selesai 12/30 | Digital Development & Pro
+2026-10-28 13:30:26,500 [INFO] [DETAIL] Membuka tab (17/30): Business Manager - ERP Softwar...
+2026-10-28 13:30:27,955 [INFO] [PROGRES] Selesai 13/30 | AI-Native Full-Stack Type
+2026-10-28 13:30:27,956 [INFO] [DETAIL] Membuka tab (18/30): AI Automation & Solutions Engi...
+2026-10-28 13:30:28,142 [INFO] [PROGRES] Selesai 14/30 | Senior Business System An
+2026-10-28 13:30:28,142 [INFO] [DETAIL] Membuka tab (19/30): Senior Go-to-Market (GTM) Engi...
+2026-10-28 13:30:29,322 [INFO] [PROGRES] Selesai 15/30 | Business Manager - ERP So
+2026-10-28 13:30:29,323 [INFO] [DETAIL] Membuka tab (20/30): REVENUE MANAGER...
+2026-10-28 13:30:29,925 [INFO] [PROGRES] Selesai 16/30 | Senior Go-to-Market (GTM)
+2026-10-28 13:30:29,926 [INFO] [DETAIL] Membuka tab (21/30): Expert, AI Engineer...
+2026-10-28 13:30:30,815 [INFO] [PROGRES] Selesai 17/30 | AI Automation & Solutions
+2026-10-28 13:30:30,815 [INFO] [DETAIL] Membuka tab (22/30): AI & Software Innovation Engin...
+2026-10-28 13:30:33,199 [INFO] [PROGRES] Selesai 18/30 | AI & Software Innovation 
+2026-10-28 13:30:33,200 [INFO] [DETAIL] Membuka tab (23/30): Head of Project Construction...
+2026-10-28 13:30:36,149 [INFO] [PROGRES] Selesai 19/30 | Head of Project Construct
+2026-10-28 13:30:36,150 [INFO] [DETAIL] Membuka tab (24/30): AI & Machine Learning Engineer...
+2026-10-28 13:30:37,970 [INFO] [PROGRES] Selesai 20/30 | IT Developer Specialist
+2026-10-28 13:30:37,971 [INFO] [DETAIL] Membuka tab (25/30): HRGA Generalist...
+2026-10-28 13:30:39,927 [INFO] [PROGRES] Selesai 21/30 | Head of Information Techn
+2026-10-28 13:30:39,929 [INFO] [DETAIL] Membuka tab (26/30): Windows C/C++ - we pay for you...
+2026-10-28 13:30:40,397 [INFO] [PROGRES] Selesai 22/30 | Expert, AI Engineer
+2026-10-28 13:30:40,399 [INFO] [DETAIL] Membuka tab (27/30): QA Automation Engineer...
+2026-10-28 13:30:42,093 [INFO] [PROGRES] Selesai 23/30 | HRGA Generalist
+2026-10-28 13:30:42,093 [INFO] [DETAIL] Membuka tab (28/30): AI ENGINEER - 6 MONTHS CONTRAC...
+2026-10-28 13:30:42,528 [INFO] [PROGRES] Selesai 24/30 | REVENUE MANAGER
+2026-10-28 13:30:42,529 [INFO] [DETAIL] Membuka tab (29/30): CS Team Lead...
+2026-10-28 13:30:43,784 [INFO] [PROGRES] Selesai 25/30 | AI ENGINEER - 6 MONTHS CO
+2026-10-28 13:30:43,785 [INFO] [DETAIL] Membuka tab (30/30): Project Delivery Manager (Cust...
+2026-10-28 13:30:45,530 [INFO] [PROGRES] Selesai 26/30 | AI & Machine Learning Eng
+2026-10-28 13:30:46,217 [INFO] [PROGRES] Selesai 27/30 | Project Delivery Manager 
+2026-10-28 13:30:47,540 [INFO] [PROGRES] Selesai 28/30 | QA Automation Engineer
+2026-10-28 13:30:48,549 [INFO] [PROGRES] Selesai 29/30 | CS Team Lead
+2026-10-28 13:30:49,963 [INFO] [PROGRES] Selesai 30/30 | Windows C/C++ - we pay fo
+2026-10-28 13:30:49,987 [INFO] Tombol 'Next' tidak ditemukan untuk role 'ai automation'. Berarti sudah di halaman terakhir.
+2026-10-28 13:30:51,256 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 60 ===
+2026-10-28 13:30:51,299 [INFO] ================ATURAN HASIL GABUNGAN================
+2026-10-28 13:30:51,301 [INFO] Total dari JobStreet : 60 lowongan
+2026-10-28 13:30:51,302 [INFO] Total dari Kalibrr   : 20 lowongan
+2026-10-28 13:30:51,304 [INFO] Total Keseluruhan    : 80 lowongan
+2026-10-28 13:30:51,305 [INFO] =====================================================
+2026-10-28 13:38:27,470 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER (JOBSTREET + KALBRR) ===
+2026-10-28 13:38:27,471 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 13:38:27,472 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:38:27,473 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 13:38:27,473 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 13:38:27,610 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 30 lowongan) ---
+2026-10-28 13:38:28,959 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:38:29,074 [INFO] Role 'python developer': Berhasil mengambil 15/30 lowongan (Offset: 0)
+2026-10-28 13:38:29,319 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=15 "HTTP/1.1 200 OK"
+2026-10-28 13:38:29,343 [INFO] Role 'python developer': Berhasil mengambil 15/30 lowongan (Offset: 15)
+2026-10-28 13:38:29,343 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 30 lowongan) ---
+2026-10-28 13:38:29,733 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 13:38:29,769 [INFO] Role 'ai automation': Berhasil mengambil 14/30 lowongan (Offset: 0)
+2026-10-28 13:38:30,658 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=15 "HTTP/1.1 200 OK"
+2026-10-28 13:38:30,784 [INFO] Role 'ai automation': Berhasil mengambil 14/30 lowongan (Offset: 15)
+2026-10-28 13:38:30,925 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 29 ===
+2026-10-28 13:38:31,366 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 13:38:31,370 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 13:38:48,724 [ERROR] Task was destroyed but it is pending!
+task: <Task cancelling name='Task-1' coro=<main() done, defined at D:\yusuf-python\Agentic_Ai_Job_match_V1\run_scrapers.py:14> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[gather.<locals>._done_callback() at C:\Users\yalfi\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py:764]>
+2026-10-28 13:54:51,310 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:02:37,149 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:02:37,151 [WARNING] Supabase URL belum dikonfigurasi dengan benar!
+2026-10-28 14:02:37,153 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 14:02:37,153 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:02:37,157 [INFO] Maksimal Limit Data per Role: 50
+2026-10-28 14:02:37,160 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:02:37,540 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:02:38,483 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:02:38,543 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:02:38,543 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:02:38,833 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:02:38,863 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:02:38,873 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:02:41,229 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:02:41,239 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:03:05,077 [ERROR] Task was destroyed but it is pending!
+task: <Task cancelling name='Task-1' coro=<main() done, defined at D:\yusuf-python\Agentic_Ai_Job_match_V1\run_scrapers.py:15> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[gather.<locals>._done_callback() at C:\Users\yalfi\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py:764]>
+2026-10-28 14:03:42,124 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:03:42,124 [WARNING] Supabase URL belum dikonfigurasi dengan benar!
+2026-10-28 14:03:42,126 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 14:03:42,127 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:03:42,127 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 14:03:42,127 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:03:42,342 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:03:43,226 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:03:43,312 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:03:43,312 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:03:44,015 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:03:44,042 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:03:44,042 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:03:45,591 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:03:45,593 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:03:54,572 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 14:03:58,472 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:04:00,192 [INFO] [DETAIL] Membuka tab (1/10): Python Developer...
+2026-10-28 14:04:00,197 [INFO] [DETAIL] Membuka tab (2/10): Full Stack Developer, Python /...
+2026-10-28 14:04:00,199 [INFO] [DETAIL] Membuka tab (3/10): Software Developer (Python)...
+2026-10-28 14:04:00,205 [INFO] [DETAIL] Membuka tab (4/10): Python Developer...
+2026-10-28 14:04:00,214 [INFO] [DETAIL] Membuka tab (5/10): Python Developer...
+2026-10-28 14:04:03,410 [INFO] [PROGRES] Selesai 1/10 | Full Stack Developer, Pyt
+2026-10-28 14:04:03,411 [INFO] [DETAIL] Membuka tab (6/10): Junior Python Developer...
+2026-10-28 14:04:06,491 [INFO] [PROGRES] Selesai 2/10 | Junior Python Developer
+2026-10-28 14:04:06,491 [INFO] [DETAIL] Membuka tab (7/10): Python Developer...
+2026-10-28 14:04:09,534 [INFO] [PROGRES] Selesai 3/10 | Python Developer
+2026-10-28 14:04:09,535 [INFO] [DETAIL] Membuka tab (8/10): Backend Developer (Golang)...
+2026-10-28 14:04:09,623 [INFO] [PROGRES] Selesai 4/10 | Python Developer
+2026-10-28 14:04:09,628 [INFO] [DETAIL] Membuka tab (9/10): Backend Developer (Python/Node...
+2026-10-28 14:04:12,575 [INFO] [PROGRES] Selesai 5/10 | Backend Developer (Python
+2026-10-28 14:04:12,576 [INFO] [DETAIL] Membuka tab (10/10): Backend Developer...
+2026-10-28 14:04:12,943 [INFO] [PROGRES] Selesai 6/10 | Python Developer
+2026-10-28 14:04:13,435 [INFO] [PROGRES] Selesai 7/10 | Python Developer
+2026-10-28 14:04:17,253 [INFO] [PROGRES] Selesai 8/10 | Backend Developer
+2026-10-28 14:04:17,838 [INFO] [PROGRES] Selesai 9/10 | Software Developer (Pytho
+2026-10-28 14:04:19,624 [INFO] [PROGRES] Selesai 10/10 | Backend Developer (Golang
+2026-10-28 14:04:19,626 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 14:04:19,626 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 14:04:19,626 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 14:04:23,299 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 14:04:24,893 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:04:26,103 [INFO] [DETAIL] Membuka tab (1/10): AI Automation & AI Agent Devel...
+2026-10-28 14:04:26,106 [INFO] [DETAIL] Membuka tab (2/10): Junior AI Developer (Full Remo...
+2026-10-28 14:04:26,110 [INFO] [DETAIL] Membuka tab (3/10): Customer Experience & Service ...
+2026-10-28 14:04:26,112 [INFO] [DETAIL] Membuka tab (4/10): Specialist, AI Automation...
+2026-10-28 14:04:26,115 [INFO] [DETAIL] Membuka tab (5/10): AI Automation & Solutions Engi...
+2026-10-28 14:04:27,963 [INFO] [PROGRES] Selesai 1/10 | AI Automation & Solutions
+2026-10-28 14:04:27,964 [INFO] [DETAIL] Membuka tab (6/10): AI Engineer...
+2026-10-28 14:04:28,454 [INFO] [PROGRES] Selesai 2/10 | AI Automation & AI Agent 
+2026-10-28 14:04:28,454 [INFO] [DETAIL] Membuka tab (7/10): AI Automation Engineer (CRM & ...
+2026-10-28 14:04:29,876 [INFO] [PROGRES] Selesai 3/10 | AI Engineer
+2026-10-28 14:04:29,877 [INFO] [DETAIL] Membuka tab (8/10): AI and Automation Specialist...
+2026-10-28 14:04:31,583 [INFO] [PROGRES] Selesai 4/10 | Specialist, AI Automation
+2026-10-28 14:04:31,583 [INFO] [DETAIL] Membuka tab (9/10): AI Transformation Senior Manag...
+2026-10-28 14:04:34,470 [INFO] [PROGRES] Selesai 5/10 | AI Transformation Senior 
+2026-10-28 14:04:34,471 [INFO] [DETAIL] Membuka tab (10/10): CS Team Lead...
+2026-10-28 14:04:37,283 [INFO] [PROGRES] Selesai 6/10 | CS Team Lead
+2026-10-28 14:04:39,360 [INFO] [PROGRES] Selesai 7/10 | AI and Automation Special
+2026-10-28 14:04:40,084 [INFO] [PROGRES] Selesai 8/10 | Junior AI Developer (Full
+2026-10-28 14:04:40,794 [INFO] [PROGRES] Selesai 9/10 | AI Automation Engineer (C
+2026-10-28 14:04:42,025 [INFO] [PROGRES] Selesai 10/10 | Customer Experience & Ser
+2026-10-28 14:04:42,026 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 14:04:43,421 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 14:04:43,478 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 14:04:43,479 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 14:04:43,479 [INFO] Menyimpan data tervalidasi ke Supabase...
+2026-10-28 14:04:43,480 [ERROR] Supabase client tidak aktif. Data gagal disimpan ke database.
+2026-10-28 14:04:43,480 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 14:10:56,610 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:10:57,716 [INFO] Supabase client berhasil diinisialisasi.
+2026-10-28 14:10:57,716 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 14:10:57,717 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:10:57,717 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 14:10:57,718 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:10:57,722 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:10:58,412 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:10:58,483 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:10:58,483 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:10:58,742 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:10:58,778 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:10:58,779 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:11:01,401 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:11:01,402 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:11:09,563 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 14:11:11,806 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:11:12,837 [INFO] [DETAIL] Membuka tab (1/10): Python Developer...
+2026-10-28 14:11:12,840 [INFO] [DETAIL] Membuka tab (2/10): Backend Developer (Golang)...
+2026-10-28 14:11:12,843 [INFO] [DETAIL] Membuka tab (3/10): Senior Backend Engineer...
+2026-10-28 14:11:12,846 [INFO] [DETAIL] Membuka tab (4/10): Backend (Golang) Developer...
+2026-10-28 14:11:12,849 [INFO] [DETAIL] Membuka tab (5/10): IT Programmer...
+2026-10-28 14:11:15,109 [INFO] [PROGRES] Selesai 1/10 | IT Programmer
+2026-10-28 14:11:15,110 [INFO] [DETAIL] Membuka tab (6/10): Backend Developer...
+2026-10-28 14:11:16,123 [INFO] [PROGRES] Selesai 2/10 | Backend (Golang) Develope
+2026-10-28 14:11:16,124 [INFO] [DETAIL] Membuka tab (7/10): Odoo Technical Developer...
+2026-10-28 14:11:16,255 [INFO] [PROGRES] Selesai 3/10 | Python Developer
+2026-10-28 14:11:16,256 [INFO] [DETAIL] Membuka tab (8/10): Back End Developer...
+2026-10-28 14:11:16,509 [INFO] [PROGRES] Selesai 4/10 | Backend Developer (Golang
+2026-10-28 14:11:16,510 [INFO] [DETAIL] Membuka tab (9/10): GIS Application Developer...
+2026-10-28 14:11:17,270 [INFO] [PROGRES] Selesai 5/10 | Backend Developer
+2026-10-28 14:11:17,271 [INFO] [DETAIL] Membuka tab (10/10): Full Stack Developer...
+2026-10-28 14:11:20,419 [INFO] [PROGRES] Selesai 6/10 | Full Stack Developer
+2026-10-28 14:11:23,343 [INFO] [PROGRES] Selesai 7/10 | GIS Application Developer
+2026-10-28 14:11:25,632 [INFO] [PROGRES] Selesai 8/10 | Back End Developer
+2026-10-28 14:11:26,763 [INFO] [PROGRES] Selesai 9/10 | Senior Backend Engineer
+2026-10-28 14:11:27,839 [INFO] [PROGRES] Selesai 10/10 | Odoo Technical Developer
+2026-10-28 14:11:27,840 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 14:11:27,840 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 14:11:27,842 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 14:11:31,542 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 14:11:33,049 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:11:34,255 [INFO] [DETAIL] Membuka tab (1/10): AI Automation & AI Agent Devel...
+2026-10-28 14:11:34,256 [INFO] [DETAIL] Membuka tab (2/10): Senior AI & Automation Enginee...
+2026-10-28 14:11:34,261 [INFO] [DETAIL] Membuka tab (3/10): AI and Automation Specialist...
+2026-10-28 14:11:34,263 [INFO] [DETAIL] Membuka tab (4/10): IT & AI Automation Specialist...
+2026-10-28 14:11:34,265 [INFO] [DETAIL] Membuka tab (5/10): AI Automation Engineer (CRM & ...
+2026-10-28 14:11:36,739 [INFO] [PROGRES] Selesai 1/10 | Senior AI & Automation En
+2026-10-28 14:11:36,740 [INFO] [DETAIL] Membuka tab (6/10): AI Transformation Senior Manag...
+2026-10-28 14:11:37,368 [INFO] [PROGRES] Selesai 2/10 | IT & AI Automation Specia
+2026-10-28 14:11:37,370 [INFO] [DETAIL] Membuka tab (7/10): AI Automation & Solutions Engi...
+2026-10-28 14:11:39,913 [INFO] [PROGRES] Selesai 3/10 | AI Automation & Solutions
+2026-10-28 14:11:39,915 [INFO] [DETAIL] Membuka tab (8/10): AI & Automation Engineer (AI A...
+2026-10-28 14:11:42,824 [INFO] [PROGRES] Selesai 4/10 | AI & Automation Engineer 
+2026-10-28 14:11:42,824 [INFO] [DETAIL] Membuka tab (9/10): AI Automation & Industrial IoT...
+2026-10-28 14:11:43,601 [INFO] [PROGRES] Selesai 5/10 | AI Automation & AI Agent 
+2026-10-28 14:11:43,601 [INFO] [DETAIL] Membuka tab (10/10): AI Engineer...
+2026-10-28 14:11:44,110 [INFO] [PROGRES] Selesai 6/10 | AI Automation Engineer (C
+2026-10-28 14:11:45,348 [INFO] [PROGRES] Selesai 7/10 | AI Automation & Industria
+2026-10-28 14:11:49,017 [INFO] [PROGRES] Selesai 8/10 | AI and Automation Special
+2026-10-28 14:11:50,399 [INFO] [PROGRES] Selesai 9/10 | AI Engineer
+2026-10-28 14:11:52,007 [INFO] [PROGRES] Selesai 10/10 | AI Transformation Senior 
+2026-10-28 14:11:52,008 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 14:11:53,680 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 14:11:53,726 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 14:11:53,728 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 14:11:53,729 [INFO] Menyimpan data tervalidasi ke Supabase...
+2026-10-28 14:11:54,826 [ERROR] Gagal menyimpan job_id 95543912: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:54,855 [ERROR] Gagal menyimpan job_id 95488043: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:54,907 [ERROR] Gagal menyimpan job_id 95319880: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:54,945 [ERROR] Gagal menyimpan job_id 95332440: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:54,975 [ERROR] Gagal menyimpan job_id 95210021: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,008 [ERROR] Gagal menyimpan job_id 94967058: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,046 [ERROR] Gagal menyimpan job_id 95266479: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,084 [ERROR] Gagal menyimpan job_id 95060410: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,142 [ERROR] Gagal menyimpan job_id 95120263: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,200 [ERROR] Gagal menyimpan job_id 95486746: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,233 [ERROR] Gagal menyimpan job_id 95327488: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,267 [ERROR] Gagal menyimpan job_id 95172740: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,309 [ERROR] Gagal menyimpan job_id 95329974: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,356 [ERROR] Gagal menyimpan job_id 95343230: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,397 [ERROR] Gagal menyimpan job_id 95013333: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,429 [ERROR] Gagal menyimpan job_id 95492419: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,722 [ERROR] Gagal menyimpan job_id 95036527: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,753 [ERROR] Gagal menyimpan job_id 94927103: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,844 [ERROR] Gagal menyimpan job_id 95205648: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:55,897 [ERROR] Gagal menyimpan job_id 95501238: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,164 [ERROR] Gagal menyimpan job_id kalibrr_186135: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,205 [ERROR] Gagal menyimpan job_id kalibrr_274958: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,255 [ERROR] Gagal menyimpan job_id kalibrr_274951: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,288 [ERROR] Gagal menyimpan job_id kalibrr_274950: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,318 [ERROR] Gagal menyimpan job_id kalibrr_164211: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,379 [ERROR] Gagal menyimpan job_id kalibrr_223089: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,450 [ERROR] Gagal menyimpan job_id kalibrr_222355: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,484 [ERROR] Gagal menyimpan job_id kalibrr_274893: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,510 [ERROR] Gagal menyimpan job_id kalibrr_271512: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,557 [ERROR] Gagal menyimpan job_id kalibrr_273218: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,606 [ERROR] Gagal menyimpan job_id kalibrr_273636: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,656 [ERROR] Gagal menyimpan job_id kalibrr_271757: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,696 [ERROR] Gagal menyimpan job_id kalibrr_274525: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,726 [ERROR] Gagal menyimpan job_id kalibrr_248988: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,758 [ERROR] Gagal menyimpan job_id kalibrr_272018: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,818 [ERROR] Gagal menyimpan job_id kalibrr_274140: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,860 [ERROR] Gagal menyimpan job_id kalibrr_271387: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,911 [ERROR] Gagal menyimpan job_id kalibrr_263917: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,940 [ERROR] Gagal menyimpan job_id kalibrr_272300: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:56,999 [ERROR] Gagal menyimpan job_id kalibrr_262843: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+2026-10-28 14:11:57,000 [INFO] Berhasil menyinkronkan 0 lowongan ke Supabase.
+2026-10-28 14:11:57,000 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 14:17:07,609 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:17:07,611 [INFO] SupabaseHandler (Requests REST API) berhasil diinisialisasi.
+2026-10-28 14:17:07,611 [INFO] Menjalankan JobStreet dan Kalibrr secara paralel...
+2026-10-28 14:17:07,611 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:17:07,613 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 14:17:07,613 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:17:07,717 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:17:08,396 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:17:08,601 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:17:08,607 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:17:09,581 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:17:09,626 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:17:09,636 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:17:12,313 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:17:12,315 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:17:19,582 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 14:17:20,961 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:17:22,485 [INFO] [DETAIL] Membuka tab (1/10): Python Developer...
+2026-10-28 14:17:22,488 [INFO] [DETAIL] Membuka tab (2/10): Backend Developer (Golang)...
+2026-10-28 14:17:22,491 [INFO] [DETAIL] Membuka tab (3/10): Senior Backend Engineer...
+2026-10-28 14:17:22,495 [INFO] [DETAIL] Membuka tab (4/10): Backend (Golang) Developer...
+2026-10-28 14:17:22,502 [INFO] [DETAIL] Membuka tab (5/10): IT Programmer...
+2026-10-28 14:17:25,176 [INFO] [PROGRES] Selesai 1/10 | Python Developer
+2026-10-28 14:17:25,177 [INFO] [DETAIL] Membuka tab (6/10): Backend Developer...
+2026-10-28 14:17:28,158 [INFO] [PROGRES] Selesai 2/10 | Backend Developer
+2026-10-28 14:17:28,158 [INFO] [DETAIL] Membuka tab (7/10): Odoo Technical Developer...
+2026-10-28 14:17:31,020 [INFO] [PROGRES] Selesai 3/10 | Odoo Technical Developer
+2026-10-28 14:17:31,021 [INFO] [DETAIL] Membuka tab (8/10): Back End Developer...
+2026-10-28 14:17:32,031 [INFO] [PROGRES] Selesai 4/10 | Senior Backend Engineer
+2026-10-28 14:17:32,032 [INFO] [DETAIL] Membuka tab (9/10): GIS Application Developer...
+2026-10-28 14:17:32,994 [INFO] [PROGRES] Selesai 5/10 | Back End Developer
+2026-10-28 14:17:32,995 [INFO] [DETAIL] Membuka tab (10/10): Full Stack Developer...
+2026-10-28 14:17:33,477 [INFO] [PROGRES] Selesai 6/10 | IT Programmer
+2026-10-28 14:17:35,126 [INFO] [PROGRES] Selesai 7/10 | Backend Developer (Golang
+2026-10-28 14:17:36,793 [INFO] [PROGRES] Selesai 8/10 | Backend (Golang) Develope
+2026-10-28 14:17:36,852 [INFO] [PROGRES] Selesai 9/10 | Full Stack Developer
+2026-10-28 14:17:38,815 [INFO] [PROGRES] Selesai 10/10 | GIS Application Developer
+2026-10-28 14:17:38,816 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 14:17:38,817 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 14:17:38,817 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 14:17:42,229 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 14:17:43,314 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:17:44,478 [INFO] [DETAIL] Membuka tab (1/10): AI Automation & AI Agent Devel...
+2026-10-28 14:17:44,479 [INFO] [DETAIL] Membuka tab (2/10): Senior AI & Automation Enginee...
+2026-10-28 14:17:44,482 [INFO] [DETAIL] Membuka tab (3/10): AI and Automation Specialist...
+2026-10-28 14:17:44,484 [INFO] [DETAIL] Membuka tab (4/10): IT & AI Automation Specialist...
+2026-10-28 14:17:44,487 [INFO] [DETAIL] Membuka tab (5/10): AI Automation Engineer (CRM & ...
+2026-10-28 14:17:47,583 [INFO] [PROGRES] Selesai 1/10 | Senior AI & Automation En
+2026-10-28 14:17:47,584 [INFO] [DETAIL] Membuka tab (6/10): AI Transformation Senior Manag...
+2026-10-28 14:17:50,194 [INFO] [PROGRES] Selesai 2/10 | AI Transformation Senior 
+2026-10-28 14:17:50,195 [INFO] [DETAIL] Membuka tab (7/10): AI Automation & Solutions Engi...
+2026-10-28 14:17:51,554 [INFO] [PROGRES] Selesai 3/10 | AI Automation Engineer (C
+2026-10-28 14:17:51,555 [INFO] [DETAIL] Membuka tab (8/10): AI & Automation Engineer (AI A...
+2026-10-28 14:17:52,167 [INFO] [PROGRES] Selesai 4/10 | IT & AI Automation Specia
+2026-10-28 14:17:52,167 [INFO] [DETAIL] Membuka tab (9/10): AI Automation & Industrial IoT...
+2026-10-28 14:17:53,500 [INFO] [PROGRES] Selesai 5/10 | AI and Automation Special
+2026-10-28 14:17:53,501 [INFO] [DETAIL] Membuka tab (10/10): AI Engineer...
+2026-10-28 14:17:55,930 [INFO] [PROGRES] Selesai 6/10 | AI Engineer
+2026-10-28 14:17:56,411 [INFO] [PROGRES] Selesai 7/10 | AI Automation & AI Agent 
+2026-10-28 14:17:56,980 [INFO] [PROGRES] Selesai 8/10 | AI Automation & Industria
+2026-10-28 14:17:57,934 [INFO] [PROGRES] Selesai 9/10 | AI & Automation Engineer 
+2026-10-28 14:17:59,489 [INFO] [PROGRES] Selesai 10/10 | AI Automation & Solutions
+2026-10-28 14:17:59,489 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 14:18:01,054 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 14:18:01,090 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 14:18:01,094 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 14:18:01,095 [INFO] Menyimpan data tervalidasi ke Supabase...
+2026-10-28 14:18:02,436 [ERROR] Gagal simpan job_id 95543912: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:02,705 [ERROR] Gagal simpan job_id 95488043: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:02,959 [ERROR] Gagal simpan job_id 95319880: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:03,297 [ERROR] Gagal simpan job_id 95332440: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:03,608 [ERROR] Gagal simpan job_id 95210021: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:03,946 [ERROR] Gagal simpan job_id 94967058: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:04,226 [ERROR] Gagal simpan job_id 95266479: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:04,518 [ERROR] Gagal simpan job_id 95060410: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:04,741 [ERROR] Gagal simpan job_id 95120263: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:04,961 [ERROR] Gagal simpan job_id 95486746: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:05,161 [ERROR] Gagal simpan job_id 95327488: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:05,370 [ERROR] Gagal simpan job_id 95172740: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:05,577 [ERROR] Gagal simpan job_id 95329974: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:05,793 [ERROR] Gagal simpan job_id 95343230: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:06,015 [ERROR] Gagal simpan job_id 95013333: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:06,207 [ERROR] Gagal simpan job_id 95492419: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:06,410 [ERROR] Gagal simpan job_id 95036527: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:06,690 [ERROR] Gagal simpan job_id 94927103: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:06,925 [ERROR] Gagal simpan job_id 95205648: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:07,140 [ERROR] Gagal simpan job_id 95501238: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:07,359 [ERROR] Gagal simpan job_id kalibrr_186135: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:07,591 [ERROR] Gagal simpan job_id kalibrr_274958: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:07,809 [ERROR] Gagal simpan job_id kalibrr_274951: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:07,999 [ERROR] Gagal simpan job_id kalibrr_274950: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:08,210 [ERROR] Gagal simpan job_id kalibrr_164211: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:08,407 [ERROR] Gagal simpan job_id kalibrr_223089: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:08,610 [ERROR] Gagal simpan job_id kalibrr_222355: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:08,834 [ERROR] Gagal simpan job_id kalibrr_274893: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:09,090 [ERROR] Gagal simpan job_id kalibrr_271512: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:09,308 [ERROR] Gagal simpan job_id kalibrr_265818: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:09,503 [ERROR] Gagal simpan job_id kalibrr_273636: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:09,745 [ERROR] Gagal simpan job_id kalibrr_271757: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:09,956 [ERROR] Gagal simpan job_id kalibrr_274525: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:10,191 [ERROR] Gagal simpan job_id kalibrr_248988: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:10,426 [ERROR] Gagal simpan job_id kalibrr_272018: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:10,673 [ERROR] Gagal simpan job_id kalibrr_274140: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:10,876 [ERROR] Gagal simpan job_id kalibrr_271387: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:11,072 [ERROR] Gagal simpan job_id kalibrr_263917: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:11,289 [ERROR] Gagal simpan job_id kalibrr_272300: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:11,509 [ERROR] Gagal simpan job_id kalibrr_262843: Status 404 - {"code":"PGRST205","details":null,"hint":null,"message":"Could not find the table 'public.jobs' in the schema cache"}
+2026-10-28 14:18:11,509 [INFO] Berhasil menyinkronkan 0 dari 40 lowongan ke Supabase.
+2026-10-28 14:18:11,511 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 14:40:48,827 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:40:48,827 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 14:40:50,169 [INFO] Berhasil memuat target_roles dinamis dari database: ['python developer', 'ai automation']
+2026-10-28 14:40:50,181 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-28 14:40:50,196 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:40:50,208 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 14:40:50,220 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:40:50,576 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:40:51,683 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:40:51,856 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:40:51,859 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:40:52,344 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:40:52,435 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:40:52,439 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:40:55,031 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:40:55,034 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:41:20,390 [ERROR] Gagal memproses role 'python developer': Page.goto: net::ERR_EMPTY_RESPONSE at https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 14:41:20,391 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 14:41:20,392 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 14:41:23,977 [ERROR] Gagal memproses role 'ai automation': Page.goto: net::ERR_ABORTED at https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 14:41:24,334 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 0 ===
+2026-10-28 14:41:24,354 [INFO] Total keseluruhan data mentah terkumpul: 20
+2026-10-28 14:41:24,354 [INFO] Filtering selesai. Lolos: 20 dari 20 total lowongan mentah.
+2026-10-28 14:41:24,679 [ERROR] Gagal simpan job_id kalibrr_186135: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:25,112 [ERROR] Gagal simpan job_id kalibrr_274958: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:25,413 [ERROR] Gagal simpan job_id kalibrr_274951: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:25,932 [ERROR] Gagal simpan job_id kalibrr_274950: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:26,211 [ERROR] Gagal simpan job_id kalibrr_164211: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:26,500 [ERROR] Gagal simpan job_id kalibrr_223089: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:26,793 [ERROR] Gagal simpan job_id kalibrr_222355: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:27,026 [ERROR] Gagal simpan job_id kalibrr_274893: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:27,212 [ERROR] Gagal simpan job_id kalibrr_271512: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:27,415 [ERROR] Gagal simpan job_id kalibrr_273218: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:27,638 [ERROR] Gagal simpan job_id kalibrr_273636: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:27,943 [ERROR] Gagal simpan job_id kalibrr_271757: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:28,137 [ERROR] Gagal simpan job_id kalibrr_274525: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:28,333 [ERROR] Gagal simpan job_id kalibrr_248988: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:28,533 [ERROR] Gagal simpan job_id kalibrr_272018: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:28,781 [ERROR] Gagal simpan job_id kalibrr_274140: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:28,999 [ERROR] Gagal simpan job_id kalibrr_271387: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:29,216 [ERROR] Gagal simpan job_id kalibrr_263917: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:29,433 [ERROR] Gagal simpan job_id kalibrr_262843: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:29,646 [ERROR] Gagal simpan job_id kalibrr_272300: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:41:29,647 [INFO] Berhasil menyinkronkan 0 dari 20 lowongan ke Supabase.
+2026-10-28 14:41:29,648 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 14:41:40,880 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:41:40,880 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 14:41:41,219 [INFO] Berhasil memuat target_roles dinamis dari database: ['python developer', 'ai automation']
+2026-10-28 14:41:41,221 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-28 14:41:41,221 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:41:41,222 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 14:41:41,222 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:41:41,347 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:41:41,894 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:41:41,968 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:41:41,969 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:41:42,151 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:41:42,173 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:41:42,174 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:41:45,063 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:41:45,063 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:41:51,442 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 14:41:54,226 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:41:55,873 [INFO] [DETAIL] Membuka tab (1/10): Junior Python Developer...
+2026-10-28 14:41:55,876 [INFO] [DETAIL] Membuka tab (2/10): Backend Developer...
+2026-10-28 14:41:55,879 [INFO] [DETAIL] Membuka tab (3/10): Backend Developer (Golang)...
+2026-10-28 14:41:55,886 [INFO] [DETAIL] Membuka tab (4/10): Backend Developer...
+2026-10-28 14:41:55,889 [INFO] [DETAIL] Membuka tab (5/10): GIS Application Developer...
+2026-10-28 14:41:58,177 [INFO] [PROGRES] Selesai 1/10 | Backend Developer
+2026-10-28 14:41:58,179 [INFO] [DETAIL] Membuka tab (6/10): Backend Developer...
+2026-10-28 14:42:01,149 [INFO] [PROGRES] Selesai 2/10 | Backend Developer
+2026-10-28 14:42:01,150 [INFO] [DETAIL] Membuka tab (7/10): Back End Developer...
+2026-10-28 14:42:03,990 [INFO] [PROGRES] Selesai 3/10 | GIS Application Developer
+2026-10-28 14:42:03,991 [INFO] [DETAIL] Membuka tab (8/10): Backend (Golang) Developer...
+2026-10-28 14:42:05,222 [INFO] [PROGRES] Selesai 4/10 | Back End Developer
+2026-10-28 14:42:05,222 [INFO] [DETAIL] Membuka tab (9/10): Senior Backend Engineer...
+2026-10-28 14:42:07,273 [INFO] [PROGRES] Selesai 5/10 | Junior Python Developer
+2026-10-28 14:42:07,275 [INFO] [DETAIL] Membuka tab (10/10): IT Programmer...
+2026-10-28 14:42:07,366 [INFO] [PROGRES] Selesai 6/10 | Backend Developer (Golang
+2026-10-28 14:42:08,839 [INFO] [PROGRES] Selesai 7/10 | Senior Backend Engineer
+2026-10-28 14:42:09,023 [INFO] [PROGRES] Selesai 8/10 | Backend Developer
+2026-10-28 14:42:10,362 [INFO] [PROGRES] Selesai 9/10 | IT Programmer
+2026-10-28 14:42:12,367 [INFO] [PROGRES] Selesai 10/10 | Backend (Golang) Develope
+2026-10-28 14:42:12,369 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 14:42:12,369 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 14:42:12,370 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 14:42:15,870 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 14:42:17,455 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 14:42:18,377 [INFO] [DETAIL] Membuka tab (1/10): Senior AI & Automation Enginee...
+2026-10-28 14:42:18,379 [INFO] [DETAIL] Membuka tab (2/10): AI Automation & AI Agent Devel...
+2026-10-28 14:42:18,383 [INFO] [DETAIL] Membuka tab (3/10): AI Engineer...
+2026-10-28 14:42:18,385 [INFO] [DETAIL] Membuka tab (4/10): AI and Automation Specialist...
+2026-10-28 14:42:18,385 [INFO] [DETAIL] Membuka tab (5/10): AI Automation & Industrial IoT...
+2026-10-28 14:42:20,553 [INFO] [PROGRES] Selesai 1/10 | AI Engineer
+2026-10-28 14:42:20,554 [INFO] [DETAIL] Membuka tab (6/10): AI engineer...
+2026-10-28 14:42:21,445 [INFO] [PROGRES] Selesai 2/10 | AI Automation & AI Agent 
+2026-10-28 14:42:21,446 [INFO] [DETAIL] Membuka tab (7/10): Specialist, AI Automation...
+2026-10-28 14:42:22,562 [INFO] [PROGRES] Selesai 3/10 | AI engineer
+2026-10-28 14:42:22,563 [INFO] [DETAIL] Membuka tab (8/10): AI Transformation Senior Manag...
+2026-10-28 14:42:22,946 [INFO] [PROGRES] Selesai 4/10 | AI and Automation Special
+2026-10-28 14:42:22,946 [INFO] [DETAIL] Membuka tab (9/10): SENIOR AI & FULLSTACK SOLUTION...
+2026-10-28 14:42:23,192 [INFO] [PROGRES] Selesai 5/10 | Specialist, AI Automation
+2026-10-28 14:42:23,193 [INFO] [DETAIL] Membuka tab (10/10): AI Automation Engineer (CRM & ...
+2026-10-28 14:42:26,635 [INFO] [PROGRES] Selesai 6/10 | AI Automation Engineer (C
+2026-10-28 14:42:27,642 [INFO] [PROGRES] Selesai 7/10 | AI Automation & Industria
+2026-10-28 14:42:27,763 [INFO] [PROGRES] Selesai 8/10 | Senior AI & Automation En
+2026-10-28 14:42:28,157 [INFO] [PROGRES] Selesai 9/10 | SENIOR AI & FULLSTACK SOL
+2026-10-28 14:42:28,836 [INFO] [PROGRES] Selesai 10/10 | AI Transformation Senior 
+2026-10-28 14:42:28,837 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 14:42:30,149 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 14:42:30,177 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 14:42:30,179 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 14:42:30,485 [ERROR] Gagal simpan job_id 95549882: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:30,751 [ERROR] Gagal simpan job_id 95133257: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:31,111 [ERROR] Gagal simpan job_id 95488043: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:31,471 [ERROR] Gagal simpan job_id 94967058: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:31,751 [ERROR] Gagal simpan job_id 95120263: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:32,108 [ERROR] Gagal simpan job_id 95175155: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:32,540 [ERROR] Gagal simpan job_id 95060410: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:32,793 [ERROR] Gagal simpan job_id 95332440: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:33,008 [ERROR] Gagal simpan job_id 95319880: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:33,223 [ERROR] Gagal simpan job_id 95210021: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:33,426 [ERROR] Gagal simpan job_id 95172740: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:33,641 [ERROR] Gagal simpan job_id 95327488: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:33,921 [ERROR] Gagal simpan job_id 95550334: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:34,136 [ERROR] Gagal simpan job_id 95329974: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:34,346 [ERROR] Gagal simpan job_id 95205648: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:34,558 [ERROR] Gagal simpan job_id 95049387: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:34,764 [ERROR] Gagal simpan job_id 95304474: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:34,961 [ERROR] Gagal simpan job_id 95492419: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:35,173 [ERROR] Gagal simpan job_id 95048936: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:35,414 [ERROR] Gagal simpan job_id 95013333: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:35,689 [ERROR] Gagal simpan job_id kalibrr_186135: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:35,923 [ERROR] Gagal simpan job_id kalibrr_274958: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:36,148 [ERROR] Gagal simpan job_id kalibrr_274951: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:36,374 [ERROR] Gagal simpan job_id kalibrr_274950: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:36,608 [ERROR] Gagal simpan job_id kalibrr_164211: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:36,839 [ERROR] Gagal simpan job_id kalibrr_223089: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:37,106 [ERROR] Gagal simpan job_id kalibrr_222355: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:37,341 [ERROR] Gagal simpan job_id kalibrr_274893: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:37,542 [ERROR] Gagal simpan job_id kalibrr_271512: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:37,806 [ERROR] Gagal simpan job_id kalibrr_273218: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:38,072 [ERROR] Gagal simpan job_id kalibrr_273636: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:38,323 [ERROR] Gagal simpan job_id kalibrr_271757: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:38,551 [ERROR] Gagal simpan job_id kalibrr_274525: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:38,810 [ERROR] Gagal simpan job_id kalibrr_248988: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:39,090 [ERROR] Gagal simpan job_id kalibrr_272018: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:39,378 [ERROR] Gagal simpan job_id kalibrr_274140: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:39,647 [ERROR] Gagal simpan job_id kalibrr_271387: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:39,940 [ERROR] Gagal simpan job_id kalibrr_263917: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:40,206 [ERROR] Gagal simpan job_id kalibrr_262843: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:40,654 [ERROR] Gagal simpan job_id kalibrr_272300: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'salary_text' column of 'job_opportunities' in the schema cache"}
+2026-10-28 14:42:40,654 [INFO] Berhasil menyinkronkan 0 dari 40 lowongan ke Supabase.
+2026-10-28 14:42:40,654 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 14:53:03,815 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 14:53:03,816 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 14:53:05,232 [INFO] Berhasil memuat target_roles dinamis dari database: ['python developer', 'ai automation']
+2026-10-28 14:53:05,251 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-28 14:53:05,255 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:53:05,260 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 14:53:05,270 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 14:53:05,521 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 14:53:06,458 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:53:06,617 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:53:06,617 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 14:53:06,846 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 14:53:06,895 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 14:53:06,897 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 14:53:09,391 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 14:53:09,396 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 14:53:35,049 [ERROR] Gagal memproses role 'python developer': Page.goto: net::ERR_EMPTY_RESPONSE at https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 14:53:35,050 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 14:53:35,051 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 14:54:00,141 [ERROR] Gagal memproses role 'ai automation': Page.goto: net::ERR_EMPTY_RESPONSE at https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+Call log:
+  - navigating to "https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14", waiting until "domcontentloaded"
+
+2026-10-28 14:54:00,534 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 0 ===
+2026-10-28 14:54:00,553 [INFO] Total keseluruhan data mentah terkumpul: 20
+2026-10-28 14:54:00,554 [INFO] Filtering selesai. Lolos: 20 dari 20 total lowongan mentah.
+2026-10-28 14:54:06,348 [INFO] Berhasil menyinkronkan 20 dari 20 lowongan ke Supabase.
+2026-10-28 14:54:06,349 [INFO] === ORKESTRASI & PIPELINE SELESAI ===
+2026-10-28 15:39:30,426 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 15:39:30,426 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 15:40:47,110 [INFO] === MEMULAI ORKESTRASI MULTI-PORTAL SCRAPER & PIPELINE ===
+2026-10-28 15:40:47,112 [INFO] SupabaseHandler berhasil diinisialisasi.
+2026-10-28 15:40:48,545 [INFO] Berhasil memuat profil user dari DB -> User ID: 1, Roles: ['python developer', 'ai automation']
+2026-10-28 15:40:48,546 [INFO] User ID aktif: 1
+2026-10-28 15:40:48,547 [INFO] Target roles aktif: ['python developer', 'ai automation']
+2026-10-28 15:40:48,547 [INFO] === MEMULAI SCRAPING UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 15:40:48,549 [INFO] Maksimal Limit Data per Role: 10
+2026-10-28 15:40:48,549 [INFO] === MEMULAI SCRAPING KALBRR SECARA SEKUENSIAL UNTUK ROLE: ['python developer', 'ai automation'] ===
+2026-10-28 15:40:48,754 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'python developer' (Target: 10 lowongan) ---
+2026-10-28 15:40:49,709 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/python-developer.json?param=te&param=python-developer&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 15:40:49,797 [INFO] Role 'python developer': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 15:40:49,798 [INFO] 
+--- [KALBRR] MULAI MENARIK ROLE: 'ai automation' (Target: 10 lowongan) ---
+2026-10-28 15:40:50,844 [INFO] HTTP Request: GET https://www.kalibrr.id/_next/data/MxsQ6kfNqrKsqzy4Vn9An/id-ID/home/te/ai-automation.json?param=te&param=ai-automation&limit=15&offset=0 "HTTP/1.1 200 OK"
+2026-10-28 15:40:50,860 [INFO] Role 'ai automation': Berhasil mengambil 10/10 lowongan (Offset: 0)
+2026-10-28 15:40:50,863 [INFO] 
+=== SCRAPING KALBRR SELESAI. Total keseluruhan terkumpul: 20 ===
+2026-10-28 15:40:52,865 [INFO] 
+--- Memproses Role: 'python developer' ---
+2026-10-28 15:40:52,867 [INFO] Target URL: https://www.jobstreet.co.id/id/python-developer-jobs?daterange=14
+2026-10-28 15:41:01,537 [INFO] --- Memindai Halaman 1 untuk role 'python developer' ---
+2026-10-28 15:41:03,137 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 15:41:04,101 [INFO] [DETAIL] Membuka tab (1/10): Junior Python Developer...
+2026-10-28 15:41:04,103 [INFO] [DETAIL] Membuka tab (2/10): Backend Developer (Golang)...
+2026-10-28 15:41:04,105 [INFO] [DETAIL] Membuka tab (3/10): IT Application Developer...
+2026-10-28 15:41:04,110 [INFO] [DETAIL] Membuka tab (4/10): Backend Developer...
+2026-10-28 15:41:04,112 [INFO] [DETAIL] Membuka tab (5/10): Backend Developer...
+2026-10-28 15:41:06,606 [INFO] [PROGRES] Selesai 1/10 | Junior Python Developer
+2026-10-28 15:41:06,606 [INFO] [DETAIL] Membuka tab (6/10): GIS Application Developer...
+2026-10-28 15:41:06,632 [INFO] [PROGRES] Selesai 2/10 | Backend Developer (Golang
+2026-10-28 15:41:06,633 [INFO] [DETAIL] Membuka tab (7/10): Junior Software Developer / St...
+2026-10-28 15:41:07,940 [INFO] [PROGRES] Selesai 3/10 | IT Application Developer
+2026-10-28 15:41:07,943 [INFO] [DETAIL] Membuka tab (8/10): Senior Backend Engineer...
+2026-10-28 15:41:10,079 [INFO] [PROGRES] Selesai 4/10 | Junior Software Developer
+2026-10-28 15:41:10,080 [INFO] [DETAIL] Membuka tab (9/10): IT DEVELOPER...
+2026-10-28 15:41:15,834 [INFO] [PROGRES] Selesai 5/10 | GIS Application Developer
+2026-10-28 15:41:15,836 [INFO] [DETAIL] Membuka tab (10/10): Back End Developer...
+2026-10-28 15:41:16,392 [INFO] [PROGRES] Selesai 6/10 | IT DEVELOPER
+2026-10-28 15:41:16,466 [INFO] [PROGRES] Selesai 7/10 | Backend Developer
+2026-10-28 15:41:18,683 [INFO] [PROGRES] Selesai 8/10 | Backend Developer
+2026-10-28 15:41:19,667 [INFO] [PROGRES] Selesai 9/10 | Back End Developer
+2026-10-28 15:41:21,169 [INFO] [PROGRES] Selesai 10/10 | Senior Backend Engineer
+2026-10-28 15:41:21,169 [INFO] Target batas maksimal data untuk role 'python developer' tercapai (10 items).
+2026-10-28 15:41:21,170 [INFO] 
+--- Memproses Role: 'ai automation' ---
+2026-10-28 15:41:21,170 [INFO] Target URL: https://www.jobstreet.co.id/id/ai-automation-jobs?daterange=14
+2026-10-28 15:41:24,711 [INFO] --- Memindai Halaman 1 untuk role 'ai automation' ---
+2026-10-28 15:41:26,241 [INFO] Ditemukan 30 kartu lowongan pada halaman ini.
+2026-10-28 15:41:27,310 [INFO] [DETAIL] Membuka tab (1/10): AI Engineer...
+2026-10-28 15:41:27,312 [INFO] [DETAIL] Membuka tab (2/10): AI Automation & AI Agent Devel...
+2026-10-28 15:41:27,313 [INFO] [DETAIL] Membuka tab (3/10): AI Transformation Senior Manag...
+2026-10-28 15:41:27,314 [INFO] [DETAIL] Membuka tab (4/10): Specialist, AI Automation...
+2026-10-28 15:41:27,316 [INFO] [DETAIL] Membuka tab (5/10): IT Manager...
+2026-10-28 15:41:29,682 [INFO] [PROGRES] Selesai 1/10 | IT Manager
+2026-10-28 15:41:29,683 [INFO] [DETAIL] Membuka tab (6/10): AI Automation & Industrial IoT...
+2026-10-28 15:41:30,528 [INFO] [PROGRES] Selesai 2/10 | AI Transformation Senior 
+2026-10-28 15:41:30,528 [INFO] [DETAIL] Membuka tab (7/10): AI Engineer...
+2026-10-28 15:41:31,300 [INFO] [PROGRES] Selesai 3/10 | AI Automation & Industria
+2026-10-28 15:41:31,300 [INFO] [DETAIL] Membuka tab (8/10): Digital Development & Producti...
+2026-10-28 15:41:33,203 [INFO] [PROGRES] Selesai 4/10 | AI Engineer
+2026-10-28 15:41:33,204 [INFO] [DETAIL] Membuka tab (9/10): AI Automation Engineer (CRM & ...
+2026-10-28 15:41:35,508 [INFO] [PROGRES] Selesai 5/10 | Specialist, AI Automation
+2026-10-28 15:41:35,508 [INFO] [DETAIL] Membuka tab (10/10): Senior AI & Automation Enginee...
+2026-10-28 15:41:37,038 [INFO] [PROGRES] Selesai 6/10 | Digital Development & Pro
+2026-10-28 15:41:37,137 [INFO] [PROGRES] Selesai 7/10 | AI Automation Engineer (C
+2026-10-28 15:41:37,434 [INFO] [PROGRES] Selesai 8/10 | AI Automation & AI Agent 
+2026-10-28 15:41:38,604 [INFO] [PROGRES] Selesai 9/10 | Senior AI & Automation En
+2026-10-28 15:41:40,413 [INFO] [PROGRES] Selesai 10/10 | AI Engineer
+2026-10-28 15:41:40,414 [INFO] Target batas maksimal data untuk role 'ai automation' tercapai (10 items).
+2026-10-28 15:41:41,491 [INFO] === SCRAPING SELESAI. Total keseluruhan data terkumpul: 20 ===
+2026-10-28 15:41:41,528 [INFO] Total keseluruhan data mentah terkumpul: 40
+2026-10-28 15:41:41,529 [INFO] Filtering selesai. Lolos: 40 dari 40 total lowongan mentah.
+2026-10-28 15:41:51,835 [INFO] Berhasil menyinkronkan pencatatan 40 dari 40 lowongan ke Supabase.
+2026-10-28 15:41:51,835 [INFO] === ORKESTRASI & PIPELINE SELESAI ===

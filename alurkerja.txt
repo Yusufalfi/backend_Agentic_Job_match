@@ -1,0 +1,38 @@
+Tahap 0: Pintu Masuk & Pemindaian CV (CV Scanning & Parsing)
+Sebelum scraper jalan nyari lowongan, sistem harus tahu dulu profil, tech stack, pengalaman, dan target role lu.
+Upload CV (Web/PDF): Lu mengunggah CV file PDF (misalnya dokumen Yusuf Alfi.pdf yang ada di direktori lu) melalui antarmuka web platform kita.  
+Ekstraksi Teks CV (backend/parser.py): Backend membaca file PDF CV tersebut, lalu mengekstrak seluruh isinya menjadi teks bersih—mulai dari riwayat pekerjaan (seperti pengalaman sebagai RPA Developer di YKK Zipco Indonesia atau Web Developer), riwayat pendidikan, hingga daftar skills (Python, UiPath, Playwright, MySQL, dll.).Penyimpanan Profil ke Supabase (backend/database.py): Data hasil parsing CV tersebut diubah menjadi format terstruktur dan disimpan ke dalam database Supabase pada tabel user/profile agar sistem memiliki "memori" tentang siapa profil yang sedang dicarikan pekerjaan.
+
+
+
+Tahap 1: Pengumpulan Lowongan Multi-Portal (Worker / Scrapers)
+Setelah profil dan CV lu tersimpan, agen scraper mulai bergerak:
+
+JobStreet Scraper: Membuka browser otomatis via Playwright di balik layar untuk menelusuri halaman web dan mengambil deskripsi detail lowongan kerja sesuai target role lu.
+
+Kalibrr Scraper: Menembak endpoint API Next.js secara langsung menggunakan httpx (seperti skrip cepat yang baru saja kita buat) untuk mengambil data lowongan secara instan tanpa buka browser.
+
+Semua data mentah dari berbagai portal ini dinormalisasi ke dalam format kamus (dictionary) yang seragam.
+
+
+Tahap 2: Penyaringan Aturan (Deterministic Filtering)
+Data mentah dari kedua portal digabung menjadi satu kolam data (all_raw_jobs).
+
+Masuk ke modul Deterministic Filter (apply_deterministic_filters), di mana sistem menyaring judul lowongan dari kata-kata terlarang berdasarkan profile.json (misalnya: magang, intern, unpaid). Lowongan yang tidak sesuai langsung di-skip.
+
+Tahap 3: Deduplikasi & Simpan ke Database (Supabase DB)
+Sistem mengecek apakah job_id dari lowongan tersebut sudah pernah masuk sebelumnya (mencegah duplikasi data).
+
+Lowongan yang lolos filter awal disimpan ke tabel jobs di Supabase.
+
+
+Tahap 4: Evaluasi Kecerdasan Buatan (AI Matcher Engine)
+Otak AI (worker/matcher.py) membaca teks deskripsi lowongan kerja yang tersimpan di database, lalu membandingkannya langsung dengan data teks CV lu yang sudah dipparsing di Tahap 0.
+AI memberikan Skor Kecocokan (AI Score) (skala 0–100) dan alasan analisisnya (AI Reason)
+:Skor $\ge$ 75: Lowongan dinilai sangat relevan (misalnya cocok dengan keahlian Python & Automation lu).
+Skor $<$ 75: Lowongan dicap LOW_SCORE dan disimpan di database saja tanpa dikirim ke Telegram agar lu tidak terganggu spam.
+
+
+Tahap 5: Notifikasi & Auto-Cover Letter (Telegram Bot)
+Lowongan dengan skor $\ge$ 75 otomatis memicu pengiriman pesan instan ke bot Telegram lu (bot.py).
+Di dalam pesan Telegram tersebut, tersedia tombol interaktif (inline button) seperti "Buatkan Cover Letter". Jika lu klik, sistem backend akan otomatis meracik surat lamaran profesional secara instan berdasarkan kecocokan lowongan tersebut dengan CV lu!
